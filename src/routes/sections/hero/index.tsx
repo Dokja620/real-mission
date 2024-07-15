@@ -7,8 +7,8 @@ export const Hero = component$(() => {
                 <h1>Miova, Manova… <br /> Mihavao, Manavao…</h1>
                 <h2>Manorata tantara</h2>
                 <div class="c-t-a">
-                    <a href="">Nous soutenir</a>
-                    <a href="">Voir plus …</a>
+                    <a href="">Nous contacter</a>
+                    <a href="">Visiter le site</a>
                 </div>
             </div>
         </section>

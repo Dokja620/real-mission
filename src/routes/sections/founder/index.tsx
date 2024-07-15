@@ -6,7 +6,8 @@ export const Founder = component$(() => {
     return (
         <section id="founder" class="container">
             <div class="text">
-                <h4>Mots du fondateur <br /> | <span>Rev Dr Mamy RASOLOFONDRAINIBE</span></h4>
+                <h4>Mots du fondateur</h4>
+                <h5>| Rev Dr Mamy RASOLOFONDRAINIBE</h5>
                 <p>
                     Le développement s’accélère à grand pas dans ce monde. – La 
                     technologie s’accroit et évolue vite. La société humaine se submerge 

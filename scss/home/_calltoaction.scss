@@ -1,0 +1,18 @@
+#c-t-a{
+    text-align: center;
+    padding: calc($spacing-xxl * 1.5) 0;
+    border-top: 2px solid color-mix(in srgb, var(--rich-black), transparent 80%);
+    border-bottom: 2px solid color-mix(in srgb, var(--rich-black), transparent 80%);
+    margin-top: calc($spacing-xxl *2);
+    h3{
+        margin: 0 0 $spacing-xs;
+    }
+    a{
+        padding: $spacing-xs $spacing-xl;
+        background: var(--azul);
+        font-weight: 600;
+        text-transform: uppercase;
+        color: white;
+        border-radius: $spacing-xs;
+    }
+}

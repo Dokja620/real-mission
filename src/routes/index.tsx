@@ -11,10 +11,10 @@ export default component$(() => {
   return (
     <>
       <Hero/>
-      <Founder/>
       <Goal/>
       <Process/>
       <Way/>
+      <Founder/>
       <CallToAction/>
     </>
   );

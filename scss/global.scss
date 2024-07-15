@@ -40,9 +40,18 @@ body {
 @import './home/goal';
 @import './home/process';
 @import './home/way';
+@import './home/calltoaction';
 
 // Pages
 
 section{
     margin: 0 0 $spacing-xxl;
+}
+
+h4{
+    width: fit-content;
+    @include underline();
+}
+h5{
+    color: var(--azul);
 }

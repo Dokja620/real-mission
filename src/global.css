@@ -314,24 +314,11 @@ footer {
 }
 
 #founder h4 {
-  margin: 0 0 0.6666666667em;
   line-height: 1.2;
 }
 
-#founder h4 span {
-  font-weight: inherit;
-  position: relative;
-}
-
-#founder h4 span::before {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  height: 50%;
-  width: 100%;
-  background: color-mix(in srgb, var(--canary), transparent 20%);
-  z-index: -1;
+#founder h5 {
+  margin: 0 0 0.6666666667em;
 }
 
 #founder .verse {
@@ -350,11 +337,11 @@ footer {
   z-index: -1;
 }
 
-#founder p:nth-child(4) {
+#founder p:nth-child(5) {
   font-weight: 600;
 }
 
-#founder p:not(:nth-child(4)) {
+#founder p:not(:nth-child(5)) {
   margin: 0 0 0.6666666667em;
 }
 
@@ -388,6 +375,22 @@ footer {
   background: white;
 }
 
+#goal .content > div h4 {
+  position: relative;
+  z-index: 1;
+}
+
+#goal .content > div h4::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 50%;
+  width: 100%;
+  background: color-mix(in srgb, var(--canary), transparent 20%);
+  z-index: -1;
+}
+
 #goal .content > div::before {
   content: "";
   position: absolute;
@@ -398,7 +401,7 @@ footer {
   border-radius: 4px 4px 1.5em 4px;
   background: var(--green-apple);
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1215686275), 0 5px 15px rgba(0, 0, 0, 0.137254902);
-  z-index: -2;
+  z-index: -1;
 }
 
 #goal .content > div::after {
@@ -411,7 +414,7 @@ footer {
   border-radius: 1.5em 4px 4px 4px;
   background: var(--canary);
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1215686275), 0 5px 15px rgba(0, 0, 0, 0.137254902);
-  z-index: -2;
+  z-index: -1;
 }
 
 #process {
@@ -482,10 +485,67 @@ footer {
 #process h5 {
   width: -moz-fit-content;
   width: fit-content;
-  position: relative;
 }
 
-#process h5::before {
+#process p {
+  margin: 0.6666666667em 0 0;
+  max-width: 50ch;
+}
+
+#way {
+  margin-bottom: 6em;
+}
+
+#way .content {
+  display: flex;
+  gap: 2em;
+  border-radius: 1em;
+  padding: 1em;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1215686275), 0 5px 15px rgba(0, 0, 0, 0.137254902);
+  position: relative;
+  background: white;
+}
+
+#way .content::before {
+  content: "";
+  position: absolute;
+  bottom: -0.6666666667em;
+  right: -0.6666666667em;
+  height: 50px;
+  width: 70px;
+  border-radius: 4px 4px 1.5em 4px;
+  background: var(--green-apple);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1215686275), 0 5px 15px rgba(0, 0, 0, 0.137254902);
+  z-index: -2;
+}
+
+#way .content::after {
+  content: "";
+  position: absolute;
+  top: -0.6666666667em;
+  left: -0.6666666667em;
+  height: 50px;
+  width: 70px;
+  border-radius: 1.5em 4px 4px 4px;
+  background: var(--canary);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1215686275), 0 5px 15px rgba(0, 0, 0, 0.137254902);
+  z-index: -2;
+}
+
+#way .content .titles {
+  display: grid;
+  gap: 0.6666666667em;
+}
+
+#way .content .titles h5 {
+  color: var(--rich-black);
+  width: -moz-fit-content;
+  width: fit-content;
+  position: relative;
+  z-index: 1;
+}
+
+#way .content .titles h5::before {
   content: "";
   position: absolute;
   bottom: 0;
@@ -496,13 +556,66 @@ footer {
   z-index: -1;
 }
 
-#process p {
-  margin: 0.6666666667em 0 0;
-  max-width: 50ch;
+#way .content .titles p {
+  font-weight: 700;
+  color: var(--azul);
+}
+
+#way .content .separation {
+  width: 3px;
+  background: color-mix(in srgb, var(--rich-black), transparent 80%);
+}
+
+#way .content p {
+  max-width: 70ch;
+  position: relative;
+  align-self: center;
+}
+
+#c-t-a {
+  text-align: center;
+  padding: 4.5em 0;
+  border-top: 2px solid color-mix(in srgb, var(--rich-black), transparent 80%);
+  border-bottom: 2px solid color-mix(in srgb, var(--rich-black), transparent 80%);
+  margin-top: 6em;
+}
+
+#c-t-a h3 {
+  margin: 0 0 0.6666666667em;
+}
+
+#c-t-a a {
+  padding: 0.6666666667em 2em;
+  background: var(--azul);
+  font-weight: 600;
+  text-transform: uppercase;
+  color: white;
+  border-radius: 0.6666666667em;
 }
 
 section {
   margin: 0 0 3em;
+}
+
+h4 {
+  width: -moz-fit-content;
+  width: fit-content;
+  position: relative;
+}
+
+h4::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 50%;
+  width: 100%;
+  background: color-mix(in srgb, var(--canary), transparent 20%);
+  z-index: -1;
+}
+
+h5 {
+  color: var(--azul);
 }
 
 @media (min-width: 1536px) {

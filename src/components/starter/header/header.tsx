@@ -7,7 +7,7 @@ export default component$(() => {
             <nav>
                 <a href="/" class="logo"><span><img src={logo} alt="Real Mission Mouvement Logo" width={79} height={63} /></span></a>
                 <div class="menu">
-                    <p>FR / ENG</p>
+                    <p>FR / EN</p>
                 </div>
             </nav>
         </header>

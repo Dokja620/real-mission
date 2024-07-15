@@ -6,7 +6,7 @@ export const Goal = component$(() => {
             <div class="content">
                 <div class="vision">
                     <h4>NOTRE VISION</h4>
-                    <h5>UNE DES STRUCTURES D’EMISSION DES MISSIONNAIRES LE PLUS ABONDANT EN AFRIQUE</h5>
+                    <h5>| UNE DES STRUCTURES D’EMISSION DES MISSIONNAIRES LE PLUS ABONDANT EN AFRIQUE</h5>
                     <p>
                         Dieu exhorte tous les chrétiens pour être intégrer 
                         dans sa divine vision, et gagner son objectif. 
@@ -17,7 +17,7 @@ export const Goal = component$(() => {
                 </div>
                 <div class="mission">
                     <h4>NOS MISSIONS</h4>
-                    <h5>APPORTER L’EVANGILE DANS LA SOCIETE ET EVANGELISER L’EGLISE</h5>
+                    <h5>| APPORTER L’EVANGILE DANS LA SOCIETE ET EVANGELISER L’EGLISE</h5>
                     <p>
                         L’évangélisation, et le discipôlat sont les 
                         fondements de la mission. C’est ce qu’on appelle 

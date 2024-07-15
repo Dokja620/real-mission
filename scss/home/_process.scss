@@ -56,7 +56,6 @@
     }
     h5{
         width: fit-content;
-        @include underline();
     }
     p{
         margin: $spacing-xs 0 0;
