@@ -4,6 +4,7 @@
     --picton-blue: hsla(200, 75%, 55%, 1);
     --azul: hsla(208, 73%, 42%, 1);
     --apple-green: hsla(77, 73%, 44%, 1);
+    --green-apple: hsl(96, 100%, 50%);
     --canary: hsla(56, 100%, 50%, 1);
     --rich-black: hsla(206, 80%, 4%, 1);
     --white-smoke: hsla(30, 8%, 95%, 1);
@@ -37,6 +38,8 @@ body {
 @import './home/hero';
 @import './home/founder';
 @import './home/goal';
+@import './home/process';
+@import './home/way';
 
 // Pages
 

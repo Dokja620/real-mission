@@ -24,7 +24,7 @@
     }
     .verse{
         font-weight: 500;
-        @include underline (#66ff00, 30%);
+        @include underline (var(--green-apple), 30%);
     }
     p{
         &:nth-child(4){
