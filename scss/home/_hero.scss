@@ -1,0 +1,48 @@
+#hero{
+    height: 80vh;
+    display: grid;
+    align-items: center;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), 
+                url('/media/home/001.jpg') 50% center/cover no-repeat;
+    margin: $spacing $spacing $spacing-xxl;
+    border-radius: $spacing;
+    position: relative;
+    h1{
+        text-align: center;
+        color: var(--white-smoke);
+        text-shadow: #000 0px 5px 10px, #000 0px 5px 10px;
+        line-height: 1.2;
+    }
+    h2{
+        word-spacing: 15px;
+        text-align: center;
+        font-family: 'Arsilon';
+        color: var(--white-smoke);
+        text-shadow: #000 0px 5px 10px, #000 0px 5px 10px;
+    }
+    // a{
+    //     position: absolute;
+    //     bottom: $spacing-lg;
+    //     left: 50%;
+    //     width: 40px;
+    //     aspect-ratio: 1/1;
+    //     border-right: 4px solid var(--white-smoke);
+    //     border-bottom: 4px solid var(--white-smoke);
+    //     transform: rotate(45deg);
+    // }
+}
+
+.c-t-a{
+    display: flex;
+    justify-content: center;
+    gap: $spacing;
+    margin: $spacing-xs 0 0;
+    a{
+        background: var(--azul);
+        padding: $spacing-xs $spacing;
+        border-radius: calc($spacing-xs - 4px);
+        font-weight: 600;
+        color: var(--white-smoke);
+        box-shadow: var(--rich-black) 0px 0px 15px, var(--rich-black) 0px 0px 25px;
+    }
+}

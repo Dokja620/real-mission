@@ -1,0 +1,50 @@
+header{
+    // position: fixed;
+    // display: none;
+    z-index: 5;
+    padding: $spacing;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    width: max-content;
+    img{
+        mix-blend-mode: multiply;
+    }
+}
+
+.menu{
+    display: flex;
+    gap: $spacing-xs;
+    position: relative;
+    *{
+        cursor: pointer;
+    }
+    label{
+        position: relative;
+        &::after{
+            content: 'Menu';
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            right: calc(100% + $spacing-xs);
+        }
+        div{
+            width: 20px;
+            height: 2px;
+            background: var(--rich-black);
+            &:nth-child(2){
+                margin: 3px 0;
+            }
+        }
+    }
+    input{
+        position: absolute;
+        opacity: 0;
+    }
+}

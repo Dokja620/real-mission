@@ -1,0 +1,14 @@
+#goal{
+    margin-top: calc($spacing-xxl * 2);
+    height: 100vh;
+    .content{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: $spacing-xl;
+        >div{
+            border: 2px solid var(--rich-black);
+            border-radius: $spacing;
+            padding: $spacing;
+        }
+    }
+}

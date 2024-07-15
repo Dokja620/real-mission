@@ -1,0 +1,44 @@
+#founder{
+    min-height: 40vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    .image{
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: -1;
+        clip-path: polygon(45% 0%, 100% 0%, 75% 100%, 20% 100%);
+        img{
+            height: 55vh;
+            width: auto;
+        }
+    }
+    h4{
+        margin: 0 0 $spacing-xs;
+        line-height: 1.2;
+    }
+    h4 span{
+        font-weight: inherit;
+        @include underline();
+    }
+    .verse{
+        font-weight: 500;
+        @include underline (#66ff00, 30%);
+    }
+    p{
+        &:nth-child(4){
+            font-weight: 600;
+        }
+        &:not(:nth-child(4)){
+            margin: 0 0 $spacing-xs;
+        }
+    }
+    a{
+        background: var(--picton-blue);
+        padding: $spacing-xs $spacing;
+    }
+    .text{
+        max-width: 65ch;
+    }
+}

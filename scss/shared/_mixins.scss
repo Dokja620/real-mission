@@ -1,0 +1,13 @@
+@mixin underline($color: var(--canary), $percentage: 20%){
+    position: relative;
+    &::before{
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 50%;
+        width: 100%;
+        background: color-mix(in srgb, $color, transparent $percentage);
+        z-index: -1;
+    }
+}
