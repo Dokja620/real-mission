@@ -1,5 +1,6 @@
 
-import ImgHero from '~/media/media/hero.jpg?jsx';import { component$ } from '@builder.io/qwik';
+import { component$ } from '@builder.io/qwik';
+import ImgHero from '/public/media/home/hero.webp?jsx';
 
 export const Founder = component$(() => {
     return (

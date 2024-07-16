@@ -1,6 +1,6 @@
 
 import { component$ } from '@builder.io/qwik';
-import Img002 from '~/media/media/strategy/002.png?jsx';
+import Img002 from '/media/strategy/002.webp?jsx';
 
 export const Action = component$(() => {
     return (
