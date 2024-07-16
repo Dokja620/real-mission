@@ -2,12 +2,11 @@ footer{
     padding: $spacing-xxl $spacing $spacing;
     background: color-mix(in srgb, var(--picton-blue), transparent 80%);
     .logo{
-        height: 100px;
+        width: 108px;
+        height: 84px;
         flex-shrink: 0;
-        img{
-            height: 100%;
-            width: 100%;
-        }
+        background: url('/media/icons/logo.webp') center/cover no-repeat;
+        mix-blend-mode: multiply;
     }
     .principal{
         display: none;

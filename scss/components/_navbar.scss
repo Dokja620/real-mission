@@ -11,12 +11,10 @@ nav{
 }
 
 .logo{
-    width: max-content;
-    img{
-        width: 79px;
-        height: 100%;
-        mix-blend-mode: multiply;
-    }
+    width: 79px;
+    height: 63px;
+    background: url('/media/icons/logo.webp') center/cover no-repeat;
+    mix-blend-mode: multiply;
 }
 
 .nav-links{

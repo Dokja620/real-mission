@@ -1,6 +1,5 @@
 
 import { component$ } from '@builder.io/qwik';
-import ImgHero from '/public/media/home/hero.webp?jsx';
 
 export const Founder = component$(() => {
     return (
@@ -32,7 +31,6 @@ export const Founder = component$(() => {
             </div>
             <div class="image">
                 <span></span>
-                <ImgHero alt="Rev Dr Mamy RASOLOFONDRAINIBE" />
             </div>
         </section>
     )

@@ -1,7 +1,5 @@
 
 import { component$ } from "@builder.io/qwik";
-import Logo from '/public/media/icons/logo-h-f.webp?jsx';
-
 import facebook from '/public/media/icons/facebook.svg';
 import whatsapp from '/public/media/icons/whatsapp.svg';
 import gmail from '/public/media/icons/gmail.svg';
@@ -31,7 +29,6 @@ export default component$(() => {
             </div>
             <div class="principal">
                 <div class="logo">
-                    <Logo/>
                 </div>
                 <div class="get-in-touch">
                     {/* <h5>Nous contacter</h5> */}

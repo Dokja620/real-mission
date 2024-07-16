@@ -1,13 +1,11 @@
 
 import { component$ } from '@builder.io/qwik';
-import Img001 from '/public/media/home/finality/001.webp?jsx';
 
 export const Process = component$(() => {
     return (
         <section id="process" class="container">
             <div class="images">
                 <div class="wrap slide-1">
-                    <Img001 alt="image random" />
                 </div>
                 <div class="navigation">
                     <button class="prev"></button>

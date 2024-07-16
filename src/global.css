@@ -177,13 +177,9 @@ nav {
 }
 
 .logo {
-  width: -moz-max-content;
-  width: max-content;
-}
-
-.logo img {
   width: 79px;
-  height: 100%;
+  height: 63px;
+  background: url("/media/icons/logo.webp") center/cover no-repeat;
   mix-blend-mode: multiply;
 }
 
@@ -236,13 +232,11 @@ footer {
 }
 
 footer .logo {
-  height: 100px;
+  width: 108px;
+  height: 84px;
   flex-shrink: 0;
-}
-
-footer .logo img {
-  height: 100%;
-  width: 100%;
+  background: url("/media/icons/logo.webp") center/cover no-repeat;
+  mix-blend-mode: multiply;
 }
 
 footer .principal {
@@ -357,19 +351,14 @@ footer .principal {
   position: relative;
   display: flex;
   align-items: center;
+  justify-content: space-evenly;
 }
 
 #founder .image {
-  position: absolute;
-  top: 0;
-  right: 0;
-  z-index: -1;
-  clip-path: polygon(45% 0%, 100% 0%, 75% 100%, 20% 100%);
-}
-
-#founder .image img {
+  clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+  background: url("/media/home/hero.webp") 0% 50%/cover no-repeat;
   height: 55vh;
-  width: auto;
+  width: 500px;
 }
 
 #founder h4 {
@@ -498,6 +487,8 @@ footer .principal {
 #process .wrap {
   height: 250px;
   position: relative;
+  border-radius: 1em;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1215686275), 0 5px 15px rgba(0, 0, 0, 0.137254902);
 }
 
 #process .wrap::after {
@@ -511,15 +502,6 @@ footer .principal {
   border-radius: 1.5em;
   z-index: -1;
   background: var(--green-apple);
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1215686275), 0 5px 15px rgba(0, 0, 0, 0.137254902);
-}
-
-#process .wrap img {
-  border-radius: 1em;
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-  object-fit: cover;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1215686275), 0 5px 15px rgba(0, 0, 0, 0.137254902);
 }
 
@@ -549,6 +531,10 @@ footer .principal {
 #process p {
   margin: 0.6666666667em 0 0;
   max-width: 50ch;
+}
+
+.wrap.slide-1 {
+  background: url("/media/home/finality/001.webp") center/cover no-repeat;
 }
 
 #way {
@@ -938,6 +924,9 @@ h5 {
     width: 100%;
     height: 250px;
     margin: 0 0 1.75em;
+    border-radius: 1em;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1215686275), 0 5px 15px rgba(0, 0, 0, 0.137254902);
+    background: url("/media/home/hero.webp") top center/cover no-repeat;
   }
 
   #founder .image img {
@@ -947,8 +936,6 @@ h5 {
     object-fit: cover;
     -o-object-position: top;
     object-position: top;
-    border-radius: 1em;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1215686275), 0 5px 15px rgba(0, 0, 0, 0.137254902);
   }
 
   #founder .text {
