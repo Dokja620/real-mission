@@ -1,6 +1,6 @@
 
 import { component$ } from '@builder.io/qwik';
-import Img003 from '/media/strategy/003.webp?jsx';
+import Img003 from '/public/media/strategy/003.webp?jsx';
 
 export const Effect = component$(() => {
   return (
