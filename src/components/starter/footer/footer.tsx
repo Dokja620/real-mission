@@ -1,6 +1,6 @@
 
 import { component$ } from "@builder.io/qwik";
-import logo from '/public/media/logo.jpg';
+import logo from '/public/media/logo.webp';
 
 import facebook from '/public/media/icons/facebook.svg';
 import whatsapp from '/public/media/icons/whatsapp.svg';
@@ -31,7 +31,7 @@ export default component$(() => {
             </div>
             <div class="principal">
                 <div class="logo">
-                    <img src={logo} alt="logo RMM" width={79} height={63}/>
+                    <img src={logo} alt="logo RMM" width={394} height={315}/>
                 </div>
                 <div class="get-in-touch">
                     {/* <h5>Nous contacter</h5> */}

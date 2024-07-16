@@ -1,6 +1,6 @@
 
 import { component$ } from '@builder.io/qwik';
-import Img001 from '~/media/media/finality/001.jpg?jsx';
+import Img001 from '/public/media/finality/001.jpg?jsx';
 
 export const Process = component$(() => {
     return (
