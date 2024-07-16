@@ -1,10 +1,10 @@
 
 import { component$ } from "@builder.io/qwik";
-import logo from '/media/logo.jpg';
+import logo from '/public/media/logo.jpg';
 
-import facebook from '/media/icons/facebook.svg';
-import whatsapp from '/media/icons/whatsapp.svg';
-import gmail from '/media/icons/gmail.svg';
+import facebook from '/public/media/icons/facebook.svg';
+import whatsapp from '/public/media/icons/whatsapp.svg';
+import gmail from '/public/media/icons/gmail.svg';
 
 export default component$(() => {
 
@@ -31,7 +31,7 @@ export default component$(() => {
             </div>
             <div class="principal">
                 <div class="logo">
-                    <img src={logo} alt="logo RMM" />
+                    <img src={logo} alt="logo RMM" width={79} height={63}/>
                 </div>
                 <div class="get-in-touch">
                     {/* <h5>Nous contacter</h5> */}

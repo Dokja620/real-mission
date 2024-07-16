@@ -1,5 +1,5 @@
 import { component$ } from "@builder.io/qwik";
-import logo from '/media/logo.jpg';
+import logo from '/public/media/logo.jpg';
 
 export default component$(() => {
     return (

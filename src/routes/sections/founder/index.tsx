@@ -1,6 +1,5 @@
 
 import ImgHero from '~/media/media/hero.jpg?jsx';import { component$ } from '@builder.io/qwik';
-import founder from '/media/hero.jpg';
 
 export const Founder = component$(() => {
     return (
@@ -29,7 +28,6 @@ export const Founder = component$(() => {
                     Real Mission Movement réalise ceux qui ont été dits, accomplit 
                     « l’authentique mission et le véridique évangile » 
                 </p>
-                {/* <p><span>Fondateur - William RABEZA</span></p> */}
             </div>
             <div class="image">
                 <span></span>
