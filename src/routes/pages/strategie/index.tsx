@@ -5,7 +5,6 @@ import { Impact } from "./impact";
 import { Action } from "./action";
 import { Effect } from "./effect";
 import { Orientation } from "./orientation";
-import { Objectif } from "./objectif";
 
 export default component$(() => {
     return (
@@ -14,7 +13,6 @@ export default component$(() => {
             <Impact/>
             <Effect/>
             <Orientation/>
-            {/* <Objectif/> */}
             <Action/>
         </>
     );
