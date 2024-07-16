@@ -3,7 +3,17 @@
     padding: calc($spacing-xxl * 1.5) 0;
     border-top: 2px solid color-mix(in srgb, var(--rich-black), transparent 80%);
     border-bottom: 2px solid color-mix(in srgb, var(--rich-black), transparent 80%);
-    margin-top: calc($spacing-xxl *2);
+    margin-top: calc($spacing-xxl * 2);
+    margin-bottom: calc($spacing-xxl * 2);
+    @media (max-width: $breakpoint-xs) {
+        padding: $spacing-xl 0 $spacing-2xl;
+        h3{
+            font-size: $font-size-lg;
+            max-width: 15ch;
+            line-height: 1.2;
+            margin: 0 auto $spacing;
+        }
+    }
     h3{
         margin: 0 0 $spacing-xs;
     }

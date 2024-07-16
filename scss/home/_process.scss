@@ -4,6 +4,12 @@
     justify-content: space-evenly;
     gap: $spacing-lg;
     margin-bottom: calc($spacing-xxl * 2);
+    @media (max-width: $breakpoint-sm) {
+        grid-template-columns: 1fr;
+    }
+    @media (max-width: $breakpoint-xs) {
+        padding: 0 $spacing-md;
+    }
     .images{
         position: relative;
         height: max-content;

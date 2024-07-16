@@ -1,17 +1,28 @@
 #way {
     margin-bottom: calc($spacing-xxl * 2);
-
+    
+    @media (max-width: $breakpoint-xs) {
+        padding: 0 $spacing-md;
+    }
     .content {
         display: flex;
         gap: $spacing-xl;
-
+        
         //boite
         border-radius: $spacing;
         padding: $spacing;
         box-shadow: 0 4px 6px #0000001f, 0 5px 15px #00000023;
         position: relative;
         background: white;
-
+        @media (max-width: $breakpoint-lg) {
+            flex-direction: column;
+            gap: $spacing-xs;
+            .separation{
+                height: 3px;
+                width: 100%;
+                background: color-mix(in srgb, var(--rich-black), transparent 80%);
+            }
+        }
         &::before {
             content: '';
             position: absolute;

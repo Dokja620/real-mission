@@ -7,7 +7,6 @@ header{
 
 nav{
     display: flex;
-    justify-content: space-between;
     align-items: center;
 }
 
@@ -16,6 +15,12 @@ nav{
     img{
         mix-blend-mode: multiply;
     }
+}
+
+.nav-links{
+    display: flex;
+    gap: $spacing;
+    margin: 0 $spacing-md 0 auto;
 }
 
 .menu{

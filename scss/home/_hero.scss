@@ -2,11 +2,15 @@
     height: 80vh;
     display: grid;
     align-items: center;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), 
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), 
                 url('/media/home/001.jpg') 50% center/cover no-repeat;
     margin: $spacing $spacing $spacing-xxl;
     border-radius: $spacing;
     position: relative;
+    box-shadow: 0 4px 6px #0000001f, 0 5px 15px #00000023;
+    @media (max-width: $breakpoint-lg) {
+        height: clamp(300px, 40vh, 1000px);
+    }
     h1{
         text-align: center;
         color: var(--white-smoke);
@@ -44,5 +48,10 @@
         font-weight: 600;
         color: var(--white-smoke);
         box-shadow: var(--rich-black) 0px 0px 15px, var(--rich-black) 0px 0px 25px;
+    }
+    @media (max-width: $breakpoint-md) {
+        a{
+            padding: 4px 8px;
+        }
     }
 }

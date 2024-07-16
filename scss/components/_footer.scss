@@ -1,6 +1,57 @@
 footer{
-    padding: $spacing-lg 0;
+    padding: $spacing-xxl $spacing $spacing;
+    background: color-mix(in srgb, var(--picton-blue), transparent 80%);
+    .logo{
+        height: 100px;
+        flex-shrink: 0;
+        img{
+            height: 100%;
+            width: 100%;
+        }
+    }
+    .principal{
+        display: none;
+    }
+    @media (max-width: $breakpoint-xs) {
+        .principal{
+            display: flex;
+        }
+        .minimalist{
+            display: none;
+        }
+    }
 }
+
+.principal{
+    display: flex;
+    align-items: center;
+    margin: 0 auto $spacing-lg;
+}
+.minimalist{
+    width: fit-content;
+    margin: 0 auto $spacing-lg;
+    .get-in-touch{
+        gap: $spacing-lg;
+    }
+}
+.get-in-touch{
+    display: flex;
+    flex-wrap: wrap;
+    width: fit-content;
+    gap: $spacing-xs;
+    a{
+        font-weight: 500;
+        display: flex;
+        gap: $spacing-xs;
+        padding-left: $spacing;
+    }
+}
+
+.links{
+    display: grid;
+    gap: 2px;
+}
+
 .copyright{
     display: flex;
     justify-content: center;
