@@ -182,6 +182,8 @@ nav {
 }
 
 .logo img {
+  width: 79px;
+  height: 100%;
   mix-blend-mode: multiply;
 }
 
