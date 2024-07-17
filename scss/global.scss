@@ -30,6 +30,7 @@ body {
 @import './shared/mixins';
 @import './shared/typo';
 @import './shared/lang';
+@import './shared/get-to-top';
 @import './components/navbar';
 @import './components/footer';
 @import './responsive';
@@ -41,6 +42,7 @@ body {
 @import './home/process';
 @import './home/way';
 @import './home/calltoaction';
+@import './home/gallery';
 
 // Strategy sections
 @import './pages/strathero';

@@ -1,0 +1,26 @@
+#get-to-top{
+    position: fixed;
+    bottom: 10vh;
+    right: 0;
+    button{
+        background: var(--white-smoke);
+        border: none;
+        width: 38px;
+        aspect-ratio: 1/1;
+        border-radius: 50% 0 0 50%;
+        box-shadow: 0 4px 6px #0000001f, 0 5px 15px #00000023;
+        position: relative;
+        cursor: pointer;
+        &::after{
+            content: '';
+            position: absolute;
+            top: 60%;
+            left: 55%;
+            transform: translate(-50%, -50%) rotate(45deg);
+            border-top: 4px solid var(--rich-black);
+            border-left: 4px solid var(--rich-black);
+            width: 10px;
+            aspect-ratio: 1/1;
+        }
+    }
+}

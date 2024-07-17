@@ -6,6 +6,8 @@ import { Goal } from "./sections/goal";
 import { Process } from "./sections/process";
 import { Way } from "./sections/way";
 import { CallToAction } from "./sections/c-t-a";
+// import { Gallerycta } from "./sections/gallery";
+import { GetTop } from "~/components/get-to-top";
 
 export default component$(() => {
   return (
@@ -16,6 +18,8 @@ export default component$(() => {
       <Way/>
       <Founder/>
       <CallToAction/>
+      {/* <Gallerycta/> */}
+      <GetTop/>
     </>
   );
 });

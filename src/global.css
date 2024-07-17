@@ -168,6 +168,35 @@ small {
   /* 12px */
 }
 
+#get-to-top {
+  position: fixed;
+  bottom: 10vh;
+  right: 0;
+}
+
+#get-to-top button {
+  background: var(--white-smoke);
+  border: none;
+  width: 38px;
+  aspect-ratio: 1/1;
+  border-radius: 50% 0 0 50%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1215686275), 0 5px 15px rgba(0, 0, 0, 0.137254902);
+  position: relative;
+  cursor: pointer;
+}
+
+#get-to-top button::after {
+  content: "";
+  position: absolute;
+  top: 60%;
+  left: 55%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  border-top: 4px solid var(--rich-black);
+  border-left: 4px solid var(--rich-black);
+  width: 10px;
+  aspect-ratio: 1/1;
+}
+
 header {
   z-index: 5;
   padding: 1em;
@@ -639,6 +668,23 @@ footer .principal {
   font-weight: 600;
   text-transform: uppercase;
   color: white;
+  border-radius: 0.6666666667em;
+}
+
+#gallerycta {
+  margin-bottom: 6em;
+}
+
+#gallerycta h4 {
+  margin: 0 0 0.6666666667em;
+}
+
+#gallerycta a {
+  padding: 6px 12px;
+  border: 2px solid var(--azul);
+  font-weight: 600;
+  text-transform: uppercase;
+  color: var(--azul);
   border-radius: 0.6666666667em;
 }
 

@@ -2,7 +2,7 @@ import { component$ } from "@builder.io/qwik";
 
 export default component$(() => {
     return (
-        <header>
+        <header id="navbar">
             <nav>
                 <a href="/" class="logo"></a>
                 <ul class="nav-links">

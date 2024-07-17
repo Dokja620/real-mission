@@ -16,7 +16,7 @@ export const Gallery = component$(() => {
                 <div class="gall" key={i + 1}></div>
             ))}
             {state.visibleItems < totalItems && (
-                <button onClick$={showMore} class="see-more"><h5>Voir plus</h5></button>
+                <button onClick$={showMore} class="see-more"><h5>Voir plus …</h5></button>
             )}
         </section>
     );

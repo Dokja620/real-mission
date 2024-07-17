@@ -1,0 +1,14 @@
+#gallerycta{
+    margin-bottom: calc($spacing-xxl * 2);
+    h4{
+        margin: 0 0 $spacing-xs;
+    }
+    a{
+        padding: 6px 12px;
+        border: 2px solid var(--azul);
+        font-weight: 600;
+        text-transform: uppercase;
+        color: var(--azul);
+        border-radius: $spacing-xs;
+    }
+}
