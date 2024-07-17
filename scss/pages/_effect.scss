@@ -1,17 +1,14 @@
 #effect{
     display: flex;
+    justify-content: center;
     margin-bottom: calc($spacing-xxl * 2);
     gap: $spacing-xxl;
     .image{
         height: 200px;
         aspect-ratio: 2/1;
-        img{
-            width: 100%;
-            height: 100%;
-            border-radius: $spacing;
-            object-fit: cover;
-            object-position: left center;
-        }
+        background: url('/media/strategy/003.webp') center/cover no-repeat;
+        border-radius: $spacing;
+        box-shadow: 0 4px 6px #0000001f, 0 5px 15px #00000023;
     }
     .text{
         h4{

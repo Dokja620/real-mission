@@ -1,12 +1,10 @@
 
 import { component$ } from '@builder.io/qwik';
-import Img003 from '/public/media/strategy/003.webp?jsx';
 
 export const Effect = component$(() => {
   return (
     <section id="effect" class="container">
         <div class="image">
-            <Img003 alt="standing dudes with micros" />
         </div>
         <div class="text">
             <h4>EFFETS ATTENDUS</h4>

@@ -5,6 +5,7 @@
     border-bottom: 2px solid color-mix(in srgb, var(--rich-black), transparent 80%);
     margin-top: calc($spacing-xxl * 2);
     margin-bottom: calc($spacing-xxl * 2);
+    background: url('/media/icons/Sprinkle.svg');
     @media (max-width: $breakpoint-xs) {
         padding: $spacing-xl 0 $spacing-2xl;
         h3{

@@ -20,42 +20,26 @@ export const Action = component$(() => {
                     <div class="slider">
                         <div class="slide">
                             <div>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, eaque magni quam quo nesciunt tempora earum ipsa culpa itaque ratione!</p>
+                                <p>
+                                    Renforcer le système de diffusion de l’évangile et des 
+                                    pratiques innovantes a Madagascar
+                                </p>
                             </div>
                             <div>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, eaque magni quam quo nesciunt tempora earum ipsa culpa itaque ratione!</p>
+                                <p>
+                                    Renforcer la collaboration et la plaidoirie au niveau 
+                                    nationale et internationale dans la mobilisation des ressources
+                                </p>
                             </div>
                             <div>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, eaque magni quam quo nesciunt tempora earum ipsa culpa itaque ratione!</p>
+                                <p>
+                                    Assurer la coordination, le suivi et évaluation
+                                    appropries du RMM programme
+                                </p>
                             </div>
                             <div>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, eaque magni quam quo nesciunt tempora earum ipsa culpa itaque ratione!</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="navigation">
-                        <button class="prev"></button>
-                        <button class="next"></button>
-                    </div>
-                </div>
-                <div class="wrapper">
-                    <div class="title">
-                        <h5>NOS OBJECTIFS STRATEGIQUES</h5>
-                        <h5>1/3</h5>
-                    </div>
-                    <div class="slider">
-                        <div class="slide">
-                            <div>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, eaque magni quam quo nesciunt tempora earum ipsa culpa itaque ratione!</p>
-                            </div>
-                            <div>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, eaque magni quam quo nesciunt tempora earum ipsa culpa itaque ratione!</p>
-                            </div>
-                            <div>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, eaque magni quam quo nesciunt tempora earum ipsa culpa itaque ratione!</p>
-                            </div>
-                            <div>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, eaque magni quam quo nesciunt tempora earum ipsa culpa itaque ratione!</p>
+                                <p>
+                                </p>
                             </div>
                         </div>
                     </div>
