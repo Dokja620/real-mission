@@ -181,6 +181,53 @@ small {
   /* 12px */
 }
 
+.lang input {
+  position: absolute;
+}
+
+.lang label {
+  position: absolute;
+  z-index: 1;
+  border-radius: 4px;
+  width: 68px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.flag {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.flag span {
+  border-radius: 4px;
+  filter: grayscale(1);
+  height: 20px;
+  width: 30px;
+  cursor: pointer;
+}
+
+.flag span:nth-child(1) {
+  background: url("/media/icons/french.svg") center/30px no-repeat;
+}
+
+.flag span:nth-child(2) {
+  background: url("/media/icons/english.svg") center/35px no-repeat;
+}
+
+.flag span:hover {
+  filter: grayscale(0);
+}
+
+body:has(.lang input:checked) .lang .flag span:nth-child(1) {
+  filter: grayscale(0);
+}
+
+body:has(.lang input:not(:checked)) .lang .flag span:nth-child(2) {
+  filter: grayscale(0);
+}
+
 #get-to-top {
   position: fixed;
   bottom: 10vh;

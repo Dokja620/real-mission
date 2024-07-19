@@ -1,3 +1,40 @@
+.lang{
+    input{
+        position: absolute;
+        // top: 5px;
+    }
+    label{
+        position: absolute;
+        z-index: 1;
+        border-radius: 4px;
+        width: 68px;
+        height: 20px;
+        cursor: pointer;
+    }
+}
+.flag{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    span{
+        border-radius: 4px;
+        filter: grayscale(1);
+        height: 20px;
+        width: 30px;
+        &:nth-child(1){
+            background: url('/media/icons/french.svg') center/30px no-repeat;
+        }
+        &:nth-child(2){
+            background: url('/media/icons/english.svg') center/35px no-repeat;
+        }
+        // transition: .25s filter ease-in-out;
+        cursor: pointer;
+        &:hover{
+            filter: grayscale(0);
+        }
+    }
+}
+
 // span[lang]{
 //     // background: red;
 //     font-weight: inherit;
@@ -23,3 +60,9 @@
 // body:has(.language input:checked) * [lang="en"]{
 //     display: block;
 // }
+body:has(.lang input:checked) .lang .flag span:nth-child(1){
+    filter: grayscale(0);
+}
+body:has(.lang input:not(:checked)) .lang .flag span:nth-child(2){
+    filter: grayscale(0);
+}

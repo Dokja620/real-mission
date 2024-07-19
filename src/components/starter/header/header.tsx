@@ -7,10 +7,15 @@ export default component$(() => {
                 <a href="/" class="logo"></a>
                 <ul class="nav-links">
                     <li><a href="/pages/galerie">Galerie</a></li>
-                    <li><a href="/pages/strategie">Nos strategies</a></li>
+                    {/* <li><a href="/pages/strategie">Strategie</a></li> */}
                 </ul>
-                <div class="menu">
-                    <p>FR / EN</p>
+                <div class="lang">
+                    <label for="switch"></label>
+                    <input type="checkbox" name="lang" id="switch" checked/>
+                    <div class="flag">
+                        <span></span>
+                        <span></span>
+                    </div>
                 </div>
             </nav>
         </header>
