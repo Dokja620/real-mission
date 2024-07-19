@@ -1,0 +1,121 @@
+#contact{
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    background: color-mix(in srgb, var(--rich-black), transparent 70%);
+    backdrop-filter: blur(10px);
+    z-index: 2;
+    // Style
+    // display: grid;
+    place-content: center;
+
+    label{
+        font-weight: 600;
+    }
+
+    input{
+        padding: $spacing-xs $spacing;
+    }
+    
+    textarea{
+        padding: $spacing;
+    }
+
+    input, textarea{
+        border-radius: $spacing-xs;
+        border: 2px solid color-mix(in srgb, var(--rich-black), transparent 60%);
+        resize: none;
+        &:focus{
+            outline: none;
+        }
+    }
+
+    form{
+        position: relative;
+        input{
+            margin: 0 0 $spacing;
+        }
+        display: grid;
+        border-radius: $spacing;
+        padding: $spacing-lg;
+        padding-top: $spacing-xl;
+        box-shadow: 0 4px 6px #0000001f, 0 5px 15px #00000023;
+        position: relative;
+        background: white;
+        &::before{
+            content: '';
+            position: absolute;
+            bottom: -$spacing-xs;
+            right: -$spacing-xs;
+            height: 50px;
+            width: 70px;
+            border-radius: 4px 4px $spacing-md 4px;
+            background: var(--green-apple);
+            box-shadow: 0 4px 6px #0000001f, 0 5px 15px #00000023;
+            z-index: -1;
+        }
+        &::after{
+            content: '';
+            position: absolute;
+            top: -$spacing-xs;
+            left: -$spacing-xs;
+            height: 50px;
+            width: 70px;
+            border-radius: $spacing-md 4px 4px 4px;
+            background: var(--canary);
+            box-shadow: 0 4px 6px #0000001f, 0 5px 15px #00000023;
+            z-index: -1;
+        }
+
+        .send{
+            border: none;
+            width: fit-content;
+            margin: $spacing auto 0;
+            padding: $spacing-xs $spacing-xl;
+            background: var(--azul);
+            font-weight: 600;
+            text-transform: uppercase;
+            color: white;
+            border-radius: $spacing-xs;
+        }
+
+        .close{
+            position: absolute;
+            top: $spacing-xs;
+            right: $spacing-xs;
+            border: none;
+            background: none;
+            font-weight: 600;
+            font-size: $font-size;
+            cursor: pointer;
+            width: 25px;
+            aspect-ratio: 1/1;
+            div{
+                position: relative;
+            }
+            span{
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                height: 3px;
+                width: 16px;
+                background: var(--rich-black);
+                &:nth-child(1){
+                    transform: translate(-50%, -50%) rotate(45deg);
+                }
+                &:nth-child(2){
+                    transform: translate(-50%, -50%) rotate(-45deg);
+                }
+            }
+        }
+
+        width: 500px;
+        @media (max-width: $breakpoint-sm){
+            width: 85vw;
+        }
+    }
+}

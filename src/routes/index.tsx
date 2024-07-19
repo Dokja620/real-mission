@@ -8,6 +8,7 @@ import { Way } from "./sections/way";
 import { CallToAction } from "./sections/c-t-a";
 // import { Gallerycta } from "./sections/gallery";
 import { GetTop } from "~/components/get-to-top";
+import { Contact } from "~/components/contact";
 
 export default component$(() => {
   return (
@@ -20,6 +21,7 @@ export default component$(() => {
       <CallToAction/>
       {/* <Gallerycta/> */}
       <GetTop/>
+      <Contact/>
     </>
   );
 });
