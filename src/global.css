@@ -1,5 +1,3 @@
-@charset "UTF-8";
-
 /* Default styles */
 
 :root {
@@ -1052,27 +1050,27 @@ footer .principal {
 }
 
 #action {
-  display: flex;
-  justify-content: space-evenly;
-  gap: 3em;
   margin-bottom: 6em;
 }
 
-#action .sites {
-  width: 300px;
-  height: auto;
-}
-
-#action .sites h5 {
-  width: -moz-fit-content;
-  width: fit-content;
-  margin: 0 auto;
-  color: var(--rich-black);
+#action .content {
+  display: flex;
+  gap: 3em;
+  padding: 1em;
+  height: -moz-fit-content;
+  height: fit-content;
+  border-radius: 1em;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1215686275), 0 5px 15px rgba(0, 0, 0, 0.137254902);
   position: relative;
-  margin-bottom: 1em;
+  background: white;
 }
 
-#action .sites h5::before {
+#action .content h4 {
+  position: relative;
+  z-index: 1;
+}
+
+#action .content h4::before {
   content: "";
   position: absolute;
   bottom: 0;
@@ -1083,71 +1081,134 @@ footer .principal {
   z-index: -1;
 }
 
-#action .sites img {
+#action .content::before {
+  content: "";
+  position: absolute;
+  bottom: -0.6666666667em;
+  right: -0.6666666667em;
+  height: 50px;
+  width: 70px;
+  border-radius: 4px 4px 1.5em 4px;
+  background: var(--green-apple);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1215686275), 0 5px 15px rgba(0, 0, 0, 0.137254902);
+  z-index: -1;
+}
+
+#action .content::after {
+  content: "";
+  position: absolute;
+  top: -0.6666666667em;
+  left: -0.6666666667em;
+  height: 50px;
+  width: 70px;
+  border-radius: 1.5em 4px 4px 4px;
+  background: var(--canary);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1215686275), 0 5px 15px rgba(0, 0, 0, 0.137254902);
+  z-index: -1;
+}
+
+#action .illu h5 {
+  margin: 0 auto 1em;
+  width: -moz-fit-content;
+  width: fit-content;
+  color: var(--rich-black);
+  position: relative;
+  z-index: 1;
+}
+
+#action .illu h5::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 50%;
+  width: 100%;
+  background: color-mix(in srgb, var(--canary), transparent 20%);
+  z-index: -1;
+}
+
+#action .mada {
+  width: 275px;
+}
+
+#action .mada img {
   width: 100%;
   height: 100%;
 }
 
-#action .wrapper {
-  max-width: 75ch;
-}
-
-#action .wrapper .slide {
-  padding: 0 1em;
-}
-
-#action .wrapper .slide div {
-  margin: 1em 0;
-}
-
-#action .title {
-  display: flex;
-  justify-content: space-between;
-}
-
-#action .title h5:last-child {
-  color: color-mix(in srgb, var(--rich-black), transparent 70%);
-}
-
-#action .navigation {
-  width: -moz-fit-content;
-  width: fit-content;
-  display: flex;
+#action .list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 45%);
   gap: 1em;
+  margin: 1em 0 0 1em;
 }
 
-#action button {
-  border: none;
-  width: 12px;
-  aspect-ratio: 1/1;
-  transform: rotate(45deg);
+#action .list span {
+  font-weight: 600;
 }
 
-#action button.prev {
-  border-left: 3px solid red;
-  border-bottom: 3px solid red;
-}
-
-#action button.next {
-  border-left: 3px solid red;
-  border-top: 3px solid red;
-  transform: rotate(135deg);
-}
-
-.slide p {
+#action .list p {
+  margin: 0 0 0 0.6666666667em;
   position: relative;
 }
 
-.slide p::before {
+#action .list p::after {
   content: "";
   position: absolute;
-  left: -0.6666666667em;
   top: 50%;
-  height: 90%;
+  left: -0.6666666667em;
   transform: translateY(-50%);
   width: 3px;
-  background: var(--rich-black);
-  opacity: 0.3;
+  height: 90%;
+  background: color-mix(in srgb, var(--rich-black), transparent 75%);
+}
+
+#action .navigation {
+  display: flex;
+  gap: 1em;
+  border-radius: 1em;
+  border: 2px solid color-mix(in srgb, var(--rich-black), transparent 75%);
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+#action .navigation button {
+  border: none;
+  cursor: pointer;
+  border-radius: 1em;
+}
+
+#action .navigation .sepa {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 3px;
+  background: color-mix(in srgb, var(--rich-black), transparent 75%);
+  height: 90%;
+}
+
+#action .navigation > *:not(:nth-child(even)) {
+  width: 125px;
+}
+
+#action .navigation :first-child {
+  padding-left: 1em;
+}
+
+#action .navigation :last-child {
+  padding-right: 1em;
+}
+
+#action .navigation .pagination {
+  display: grid;
+  place-content: center;
+}
+
+#action .navigation button {
+  font-weight: 600;
+  font-size: 1rem;
+  text-transform: uppercase;
+  background: none;
 }
 
 #title {

@@ -9,10 +9,10 @@ import { Orientation } from "./orientation";
 export default component$(() => {
     return (
         <>
-            <StratHero/>
+            {/* <StratHero/>
             <Impact/>
             <Effect/>
-            <Orientation/>
+            <Orientation/> */}
             <Action/>
         </>
     );

@@ -3,6 +3,7 @@ import { component$, useVisibleTask$, useStore, $ } from '@builder.io/qwik';
 export const GetTop = component$(() => {
   const state = useStore({ showButton: false });
 
+  // eslint-disable-next-line qwik/no-use-visible-task
   useVisibleTask$(() => {
     const checkScrollPosition = () => {
       const scrollPosition = window.scrollY;
