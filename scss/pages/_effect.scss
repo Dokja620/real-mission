@@ -1,13 +1,18 @@
+#merge{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: $spacing-xxl;
+}
 #effect{
-    display: flex;
+    display: grid;
     justify-content: center;
     margin-bottom: calc($spacing-xxl * 2);
-    gap: $spacing-xxl;
+    gap: $spacing;
     .image{
-        height: 200px;
-        aspect-ratio: 2/1;
-        background: url('/media/strategy/003.webp') center/cover no-repeat;
-        border-radius: $spacing;
+        height: 250px;
+        width: 100%;
+        background: url('/media/strategy/003.webp') 70% center/cover no-repeat;
+        border-radius: $spacing-xs;
         box-shadow: 0 4px 6px #0000001f, 0 5px 15px #00000023;
     }
     .text{
@@ -33,5 +38,38 @@
                 max-width: 70ch;
             }
         }
+    }
+    border-radius: $spacing;
+    padding: $spacing $spacing $spacing-lg $spacing;
+    box-shadow: 0 4px 6px #0000001f, 0 5px 15px #00000023;
+    position: relative;
+    background: white;
+    h4{
+        @include underline();
+        z-index: 1;
+    }
+    &::before{
+        content: '';
+        position: absolute;
+        bottom: -$spacing-xs;
+        right: -$spacing-xs;
+        height: 50px;
+        width: 70px;
+        border-radius: 4px 4px $spacing-md 4px;
+        background: var(--green-apple);
+        box-shadow: 0 4px 6px #0000001f, 0 5px 15px #00000023;
+        z-index: -1;
+    }
+    &::after{
+        content: '';
+        position: absolute;
+        top: -$spacing-xs;
+        left: -$spacing-xs;
+        height: 50px;
+        width: 70px;
+        border-radius: $spacing-md 4px 4px 4px;
+        background: var(--canary);
+        box-shadow: 0 4px 6px #0000001f, 0 5px 15px #00000023;
+        z-index: -1;
     }
 }

@@ -1,0 +1,16 @@
+#objectif{
+    margin-bottom: calc($spacing-xxl * 2);
+    .objectifs{
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+        gap: $spacing-xl;
+        margin-top: $spacing-xl;
+        >div{
+            border-radius: $spacing;
+            padding: $spacing;
+            box-shadow: 0 4px 6px #0000001f, 0 5px 15px #00000023;
+            position: relative;
+            background: white;
+        }
+    }
+}

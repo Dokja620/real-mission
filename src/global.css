@@ -949,18 +949,29 @@ footer .principal {
   z-index: -1;
 }
 
-#effect {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 6em;
+#merge {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   gap: 3em;
 }
 
-#effect .image {
-  height: 200px;
-  aspect-ratio: 2/1;
-  background: url("/media/strategy/003.webp") center/cover no-repeat;
+#effect {
+  display: grid;
+  justify-content: center;
+  margin-bottom: 6em;
+  gap: 1em;
   border-radius: 1em;
+  padding: 1em 1em 1.75em 1em;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1215686275), 0 5px 15px rgba(0, 0, 0, 0.137254902);
+  position: relative;
+  background: white;
+}
+
+#effect .image {
+  height: 250px;
+  width: 100%;
+  background: url("/media/strategy/003.webp") 70% center/cover no-repeat;
+  border-radius: 0.6666666667em;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1215686275), 0 5px 15px rgba(0, 0, 0, 0.137254902);
 }
 
@@ -991,62 +1002,110 @@ footer .principal {
   max-width: 70ch;
 }
 
-#orientation {
-  margin-bottom: 6em;
-}
-
-#orientation h4 {
-  margin: 0 auto 1em;
-}
-
-#orientation .list {
-  display: flex;
-  justify-content: space-evenly;
-}
-
-#orientation .list > div {
-  width: 300px;
-  background: rgb(255, 255, 255);
-  padding: 1em;
-  border-radius: 1em;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1215686275), 0 5px 15px rgba(0, 0, 0, 0.137254902);
+#effect h4 {
   position: relative;
-}
-
-#orientation .list > div h3 {
-  transform: scale(2);
-  width: -moz-fit-content;
-  width: fit-content;
-  position: absolute;
-  bottom: 8px;
-  right: 1.5em;
-  opacity: 0.07;
   z-index: 1;
 }
 
-#orientation .list > div:before {
+#effect h4::before {
   content: "";
   position: absolute;
-  bottom: -18px;
-  left: 1em;
-  height: 24px;
-  aspect-ratio: 4/1;
-  border-radius: 0.6666666667em;
+  bottom: 0;
+  left: 0;
+  height: 50%;
+  width: 100%;
+  background: color-mix(in srgb, var(--canary), transparent 20%);
+  z-index: -1;
+}
+
+#effect::before {
+  content: "";
+  position: absolute;
+  bottom: -0.6666666667em;
+  right: -0.6666666667em;
+  height: 50px;
+  width: 70px;
+  border-radius: 4px 4px 1.5em 4px;
   background: var(--green-apple);
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1215686275), 0 5px 15px rgba(0, 0, 0, 0.137254902);
   z-index: -1;
 }
 
-#orientation .list > div:after {
+#effect::after {
   content: "";
   position: absolute;
-  top: -12px;
-  right: 1em;
-  height: 24px;
-  aspect-ratio: 4/1;
-  border-radius: 0.6666666667em;
-  background: color-mix(in srgb, var(--canary), white 20%);
+  top: -0.6666666667em;
+  left: -0.6666666667em;
+  height: 50px;
+  width: 70px;
+  border-radius: 1.5em 4px 4px 4px;
+  background: var(--canary);
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1215686275), 0 5px 15px rgba(0, 0, 0, 0.137254902);
+  z-index: -1;
+}
+
+#orientation {
+  margin-bottom: 6em;
+  border-radius: 1em;
+  padding: 1em 1em 1.75em 1em;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1215686275), 0 5px 15px rgba(0, 0, 0, 0.137254902);
+  position: relative;
+  background: white;
+}
+
+#orientation h4 {
+  margin: 0 auto 0.6666666667em;
+  z-index: 1;
+}
+
+#orientation .content {
+  display: grid;
+  gap: 1em;
+}
+
+#orientation::before {
+  content: "";
+  position: absolute;
+  bottom: -0.6666666667em;
+  right: -0.6666666667em;
+  height: 50px;
+  width: 70px;
+  border-radius: 4px 4px 1.5em 4px;
+  background: var(--green-apple);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1215686275), 0 5px 15px rgba(0, 0, 0, 0.137254902);
+  z-index: -1;
+}
+
+#orientation::after {
+  content: "";
+  position: absolute;
+  top: -0.6666666667em;
+  left: -0.6666666667em;
+  height: 50px;
+  width: 70px;
+  border-radius: 1.5em 4px 4px 4px;
+  background: var(--canary);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1215686275), 0 5px 15px rgba(0, 0, 0, 0.137254902);
+  z-index: -1;
+}
+
+#objectif {
+  margin-bottom: 6em;
+}
+
+#objectif .objectifs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2em;
+  margin-top: 2em;
+}
+
+#objectif .objectifs > div {
+  border-radius: 1em;
+  padding: 1em;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1215686275), 0 5px 15px rgba(0, 0, 0, 0.137254902);
+  position: relative;
+  background: white;
 }
 
 #action {
@@ -1138,7 +1197,7 @@ footer .principal {
 
 #action .list {
   display: grid;
-  grid-template-columns: repeat(auto-fit, 45%);
+  grid-template-columns: repeat(auto-fit, 49%);
   gap: 1em;
   margin: 1em 0 0 1em;
 }

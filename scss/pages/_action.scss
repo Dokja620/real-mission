@@ -56,7 +56,7 @@
     }
     .list{
         display: grid;
-        grid-template-columns: repeat(auto-fit, 45%);
+        grid-template-columns: repeat(auto-fit, 49%);
         gap: $spacing;
         margin: $spacing 0 0 $spacing;
         span{

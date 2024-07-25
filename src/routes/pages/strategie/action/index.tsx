@@ -11,43 +11,43 @@ const articles = [
 ];
 
 const items = [
-    "Créer des centres de formation des missionnaires et des vulgarisateurs dans les 6 provinces de madagascar",
-    "Former des missionnaires et vulgarisateurs en developpement holistique et pratiques innovantes",
-    "Créer une station radio real mission radio",
-    "Renforcer la visibiliter de rmm au niveau national et international",
-    "Créer des projets innovants avec les acteurs locaux",
-    "Organiser des formations de mobilisation des ressources et des plaidoyer pour les leaders nationaux et regionaux de rmm",
-    "Produire et diffuser 02 bulletins semestriels par an real mission news",
-    "Mettre a jour les outils de fonctionnement de rmm",
-    "Se doter des moyens de travail adaptes",
-    "Se doter des moyens de travail adaptesact 1.2.4 effectuer une evaluation des effets et impacts rmm programme",
-    "Mener des formations en mission appliquee short et deep",
-    "Mener des formations en mission appliquee approfondie",
-    "Mener des formations en developpement holistique specifique",
-    "Créer une ecole et appuyer la scolarisation des enfants et jeunes",
-    "Mener des formations en alphabetisation fonctionnelle des adultes",
-    "Former les locaux sur des pratiques de productions agricoles innovantes",
-    "Former les locaux sur des pratiques de transformation et de conservation des produits agricoles",
-    "Former les locaux sur des pratiques de commercialisation selon le concept agrobusiness",
-    "Créer un complexe sportif pour les jeunes et enfants",
-    "Créer des sites de demonstration en pratique agricole innovante",
-    "Créer des infrastructure de sante et des structures pour des operations chirurgicales mobiles",
-    "Distribuer des medicaments, vetements, ustenciles de cuisines",
-    "Soutenir la diversification culturale et l'integration agriculture elev",
-    "Mettre en œuvre l'approche cash + pour les menages les plus vulnerables",
-    "Appuyer les petits metiers et surtout ceux qui sont lies a l'agriculture, elevage, forêt et pêche",
-    "Developper la mise en place d'un système d'epargne mutuelle",
-    "Proteger et ameliorer la gestion des ressources en eau existantes",
-    "Developper des solutions naturelles et biologiques pour la protection des cultures et la fertilisation du sol",
-    "Mener une vaccination et deparasitage de masse des animaux d'elevage",
-    "Créer des dispositifs de securisation des semences grainotheque",
-    "Conduire la communaute locale vers l'adoption et effectivite d'une eco-village",
-    "Mettre en relation les acteurs a travers une plate forme d'echange"
+    "Créer des centres de formation pour missionnaires dans les six provinces de Madagascar.",
+    "Former des missionnaires et vulgarisateurs en pratiques innovantes et développement holistique.",
+    "Créer une station de radio, Real Mission Radio, pour améliorer la communication.",
+    "Renforcer la visibilité de RMM au niveau national et international pour plus d'impact.",
+    "Développer des projets innovants avec les acteurs locaux pour les communautés.",
+    "Organiser des formations en mobilisation des ressources et plaidoyer pour les leaders nationaux.",
+    "Produire et diffuser deux bulletins semestriels, Real Mission News, pour les parties prenantes.",
+    "Mettre à jour les outils de fonctionnement de RMM pour une meilleure efficacité.",
+    "Se doter d'outils et d'équipements de travail adaptés pour la productivité.",
+    "Acquérir des outils et évaluer les impacts des programmes de RMM.",
+    "Mener des formations en mission appliquée, courtes et longues, pour les compétences.",
+    "Organiser des formations approfondies en mission appliquée pour les missionnaires.",
+    "Offrir des formations spécifiques en développement holistique pour les communautés locales.",
+    "Créer une école et soutenir la scolarisation des enfants pour promouvoir l'éducation.",
+    "Mener des formations en alphabétisation fonctionnelle pour adultes pour améliorer les compétences.",
+    "Former les locaux aux pratiques agricoles innovantes pour augmenter la productivité durable.",
+    "Former les locaux aux techniques de transformation des produits agricoles.",
+    "Former les locaux aux pratiques de commercialisation agrobusiness pour améliorer les revenus.",
+    "Créer un complexe sportif pour les jeunes et enfants pour promouvoir les loisirs.",
+    "Établir des sites de démonstration pour les pratiques agricoles innovantes.",
+    "Créer des infrastructures de santé et des structures mobiles pour opérations chirurgicales.",
+    "Distribuer des médicaments, vêtements et ustensiles de cuisine pour les ménages.",
+    "Soutenir la diversification culturale et l'intégration agriculture-élevage pour durabilité.",
+    "Mettre en œuvre l'approche Cash+ pour les ménages les plus vulnérables.",
+    "Appuyer les petits métiers liés à l'agriculture, élevage, forêt et pêche.",
+    "Développer un système d'épargne mutuelle pour encourager l'épargne communautaire.",
+    "Protéger et améliorer la gestion des ressources en eau existantes.",
+    "Développer des solutions naturelles pour la protection des cultures et fertilisation des sols.",
+    "Mener des campagnes de vaccination et déparasitage de masse pour animaux d'élevage.",
+    "Créer des dispositifs de sécurisation des semences, comme les grainothèques.",
+    "Encourager l'adoption d'un éco-village par la communauté locale.",
+    "Mettre en relation les acteurs à travers une plateforme d'échange pour collaboration."
 ];
 
 export const Action = component$(() => {
     const state = useStore({ currentPage: 1 });
-    const itemsPerPage = 9; // Display 9 items per page
+    const itemsPerPage = 11; // Display 9 items per page
     const totalPages = Math.ceil(items.length / itemsPerPage);
 
     const startIndex = (state.currentPage - 1) * itemsPerPage;

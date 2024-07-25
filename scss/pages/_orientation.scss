@@ -1,53 +1,43 @@
 #orientation{
     margin-bottom: calc($spacing-xxl * 2);
     h4{
-        margin: 0 auto $spacing;
+        margin: 0 auto $spacing-xs;
+        z-index: 1;
     }
     // h3{
     //     display: none;
     // }
-    .list{
-        display: flex;
-        justify-content: space-evenly;
-        >div{
-            width: 300px;
-            background: rgb(255, 255, 255);
-            padding: $spacing;
-            border-radius: $spacing;
-            box-shadow: 0 4px 6px #0000001f, 0 5px 15px #00000023;
-            position: relative;
-            h3{
-                transform: scale(2);
-                width: fit-content;
-                position: absolute;
-                bottom: 8px;
-                right: $spacing-md;
-                opacity: .07;
-                z-index: 1;
-            }
-            &:before{
-                content: '';
-                position: absolute;
-                bottom: -18px;
-                left: $spacing;
-                height: 24px;
-                aspect-ratio: 4/1;
-                border-radius: $spacing-xs;
-                background: var(--green-apple);
-                box-shadow: 0 4px 6px #0000001f, 0 5px 15px #00000023;
-                z-index: -1;
-            }
-            &:after{
-                content: '';
-                position: absolute;
-                top: -12px;
-                right: $spacing;
-                height: 24px;
-                aspect-ratio: 4/1;
-                border-radius: $spacing-xs;
-                background: color-mix(in srgb, var(--canary), white 20%);
-                box-shadow: 0 4px 6px #0000001f, 0 5px 15px #00000023;
-            }
-        }
+    .content{
+        display: grid;
+        gap: $spacing;
+    }
+    border-radius: $spacing;
+    padding: $spacing $spacing $spacing-lg $spacing;
+    box-shadow: 0 4px 6px #0000001f, 0 5px 15px #00000023;
+    position: relative;
+    background: white;
+    &::before{
+        content: '';
+        position: absolute;
+        bottom: -$spacing-xs;
+        right: -$spacing-xs;
+        height: 50px;
+        width: 70px;
+        border-radius: 4px 4px $spacing-md 4px;
+        background: var(--green-apple);
+        box-shadow: 0 4px 6px #0000001f, 0 5px 15px #00000023;
+        z-index: -1;
+    }
+    &::after{
+        content: '';
+        position: absolute;
+        top: -$spacing-xs;
+        left: -$spacing-xs;
+        height: 50px;
+        width: 70px;
+        border-radius: $spacing-md 4px 4px 4px;
+        background: var(--canary);
+        box-shadow: 0 4px 6px #0000001f, 0 5px 15px #00000023;
+        z-index: -1;
     }
 }
