@@ -19,7 +19,7 @@
             margin: 0 0 $spacing-lg;
             border-radius: $spacing;
             box-shadow: 0 4px 6px #0000001f, 0 5px 15px #00000023;
-            background: url('/media/home/hero.webp') top center/cover no-repeat;
+            background: url('/media/home/founder.webp') top center/cover no-repeat;
             img{
                 width: 100%;
                 height: 100%;
@@ -33,7 +33,7 @@
     }
     .image{
         clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
-        background: url('/media/home/hero.webp') 0% 50%/cover no-repeat;
+        background: url('/media/home/founder.webp') 0% 50%/cover no-repeat;
         height: 55vh;
         width: 500px;
     }

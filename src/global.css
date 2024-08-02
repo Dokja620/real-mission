@@ -564,7 +564,7 @@ footer .principal {
   height: 80vh;
   display: grid;
   align-items: center;
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("/media/home/001.webp") 50% center/cover no-repeat;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("/media/home/hero.webp") top center/cover no-repeat;
   margin: 1em 1em 3em;
   border-radius: 1em;
   position: relative;
@@ -604,15 +604,15 @@ footer .principal {
 }
 
 #swiper {
-  margin-top: 6em;
-  margin-bottom: 6em;
+  margin-top: 9em;
+  margin-bottom: 9em;
   display: grid;
   place-content: center;
 }
 
 #swiper .swipe {
   display: flex;
-  gap: 3em;
+  gap: 6em;
   align-items: center;
   position: relative;
   justify-content: space-evenly;
@@ -779,7 +779,7 @@ footer .principal {
 
 #founder .image {
   clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
-  background: url("/media/home/hero.webp") 0% 50%/cover no-repeat;
+  background: url("/media/home/founder.webp") 0% 50%/cover no-repeat;
   height: 55vh;
   width: 500px;
 }
@@ -1662,7 +1662,7 @@ section {
     margin: 0 0 1.75em;
     border-radius: 1em;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1215686275), 0 5px 15px rgba(0, 0, 0, 0.137254902);
-    background: url("/media/home/hero.webp") top center/cover no-repeat;
+    background: url("/media/home/founder.webp") top center/cover no-repeat;
   }
 
   #founder .image img {

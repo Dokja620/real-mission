@@ -4,8 +4,8 @@ export const Hero = component$(() => {
     return (
         <section id="hero" class="">
             <div class="content container">
-                <h1>Miova, Manova… <br /> Mihavao, Manavao…</h1>
-                <h2>Manorata tantara</h2>
+                <h1>La vraie mission <br /> pour le véritable Évangile</h1>
+                <h2>Real Mission Movement</h2>
                 <div class="c-t-a">
                     <a href="">Nous contacter</a>
                     <a href="">Visiter le site</a>

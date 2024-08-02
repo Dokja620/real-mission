@@ -1,5 +1,5 @@
 import { component$ } from '@builder.io/qwik';
-import Img002 from '/public/media/strategy/002.webp?jsx';
+import Img002 from '/public/media/map.webp?jsx';
 
 export const Map = component$(() => {
   return (

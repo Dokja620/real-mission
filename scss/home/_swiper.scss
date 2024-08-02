@@ -1,12 +1,12 @@
 #swiper{
-    margin-top: calc($spacing-xxl * 2);
-    margin-bottom: calc($spacing-xxl * 2);
+    margin-top: calc($spacing-xxl * 3);
+    margin-bottom: calc($spacing-xxl * 3);
     // height: 100vh;
     display: grid;
     place-content: center;
     .swipe{
         display: flex;
-        gap: $spacing-xxl;
+        gap: calc($spacing-xxl * 2);
         align-items: center;
         position: relative;
         justify-content: space-evenly;
