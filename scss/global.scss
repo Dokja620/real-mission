@@ -18,12 +18,12 @@
     text-decoration: none;
     font-weight: normal;
     scroll-behavior: smooth;
-    color: var(--rich-black);
+    color: var(--white-smoke);
 }
 
 body {
     min-height: 100dvh;
-    background: var(--white-smoke);
+    background: var(--azul);
 }
 
 @import './shared/var';
@@ -39,34 +39,16 @@ body {
 
 // Home sections
 @import './home/hero';
+@import './home/swiper';
 @import './home/founder';
-@import './home/goal';
-@import './home/process';
-@import './home/way';
-@import './home/calltoaction';
-@import './home/gallery';
-
-// Strategy sections
-@import './pages/strathero';
-@import './pages/impact';
-@import './pages/effect';
-@import './pages/orientation';
-@import './pages/objectif';
-@import './pages/action';
+@import './home/map';
 
 // Gallery sections
 @import './pages/gallery';
+@import './pages/imgGallery';
 
 // Pages
 
 section{
     margin: 0 0 $spacing-xxl;
-}
-
-h4{
-    width: fit-content;
-    @include underline();
-}
-h5{
-    color: var(--azul);
 }

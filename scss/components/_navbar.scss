@@ -14,13 +14,32 @@ nav{
     width: 79px;
     height: 63px;
     background: url('/media/icons/logo.webp') center/cover no-repeat;
-    mix-blend-mode: multiply;
+    filter: drop-shadow(0 0 2px rgba(255, 255, 255, 0.562));
 }
 
 .nav-links{
     display: flex;
     gap: $spacing;
     margin: 0 $spacing-md 0 auto;
+    a{
+        position: relative;
+        &::after{
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 50%;
+            transform: translateX(-50%) scaleX(0);
+            transform-origin: right;
+            height: 4px;
+            width: 100%;
+            background: linear-gradient(to right, var(--canary) 50%, var(--apple-green) 50%);
+            transition: transform .25s ease-in-out;
+        }
+        &:hover::after{
+            transform: translateX(-50%) scaleX(1);
+            transform-origin: left;
+        }
+    }
 }
 
 .menu{

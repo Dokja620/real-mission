@@ -1,6 +1,6 @@
 footer{
     padding: $spacing-xxl $spacing $spacing;
-    background: color-mix(in srgb, var(--picton-blue), transparent 80%);
+    background: color-mix(in srgb, var(--picton-blue), transparent 0%);
     .logo{
         width: 108px;
         height: 84px;
@@ -43,6 +43,17 @@ footer{
         display: flex;
         gap: $spacing-xs;
         padding-left: $spacing;
+        span{
+            background: var(--white-smoke);
+            padding: 2px 8px;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px #0000001f, 0 5px 15px #00000023;
+            img{
+                position: relative;
+                top: 4px;
+                filter: drop-shadow(0 0 4px #a3a3a367);
+            }
+        }
     }
 }
 

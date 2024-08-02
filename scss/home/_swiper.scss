@@ -1,0 +1,151 @@
+#swiper{
+    margin-top: calc($spacing-xxl * 2);
+    margin-bottom: calc($spacing-xxl * 2);
+    // height: 100vh;
+    display: grid;
+    place-content: center;
+    .swipe{
+        display: flex;
+        gap: $spacing-xxl;
+        align-items: center;
+        position: relative;
+        justify-content: space-evenly;
+        padding-bottom: $spacing-xxl;
+    }
+    .illu{
+        width: 500px;
+        height: 300px;
+        border-radius: $spacing;
+        // background: url('/media/home/finality/001.webp') center/cover no-repeat;
+        box-shadow: 0 4px 6px #0000001f, 0 5px 15px #00000023;
+        animation: come-in .5s ease-in-out forwards;
+    }
+    .text{
+        max-width: 600px;
+        :nth-child(1){
+            opacity: 0;
+            animation: come-in .5s ease-in-out forwards;
+        }
+        :nth-child(2){
+            opacity: 0;
+            animation: come-in .5s ease-in-out .05s forwards;
+            // animation: ;
+        }
+        :nth-child(3){
+            opacity: 0;
+            animation: come-in .5s ease-in-out .10s forwards;
+            // animation: ;
+        }
+    }
+    // h4{
+    //     text-shadow: #0000005b 0px 5px 10px, #00000050 0px 5px 10px;
+    // }
+    h5{
+        text-shadow: #0000002b 0px 5px 10px, #00000020 0px 5px 10px;
+    }
+    
+    .pagination{
+        position: absolute;
+        left: 20%;
+        bottom: $spacing-xs;
+        display: flex;
+        justify-content: center;
+        gap: $spacing;
+        align-self: flex-end;
+        span{
+            height: 10px;
+            aspect-ratio: 1/1;
+            border-radius: 50%;
+            background: white;
+            cursor: pointer;
+            position: relative;
+            transition: all .25s ease-in-out;
+            box-shadow: 0px 0px 5px #0000004b, 0px 0px rgba(0, 0, 0, 0.308) #000;
+            &:hover::after{
+                transform: translate(-3px, -50%) scale(1.1);
+            }
+            &:hover.active::after{
+                transform: translate(-3px, -50%) scale(1.1);
+            }
+            &.active{
+                width: 20px;
+                border-radius: 5px;
+                // background: red;
+            }
+            &.active::after{
+                position: absolute;
+                content: '';
+                top: 50%;
+                bottom: 50%;
+                transform: translate(-3px, -50%);
+                height: 14px;
+                width: 24px;
+                border-radius: 8px;
+                border: 1px solid white;
+                box-shadow: 0px 0px 8px #00000088;
+                transition: transform .25s ease-in-out;
+            }
+            &::after{
+                position: absolute;
+                content: '';
+                top: 50%;
+                bottom: 50%;
+                transform: translate(-3px, -50%);
+                height: 14px;
+                border-radius: 50%;
+                aspect-ratio: 1/1;
+                border: 1px solid white;
+                box-shadow: 0px 0px 12px #00000088;
+                transition: transform .25s ease-in-out;
+            }
+        }
+    }
+}
+
+[data-step="1"] .illu{
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('/media/gallery/001.webp') center/cover no-repeat;
+}
+[data-step="2"] .illu{
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('/media/gallery/002.webp') center/cover no-repeat;
+}
+[data-step="3"] .illu{
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('/media/gallery/003.webp') center/cover no-repeat;
+}
+[data-step="4"] .illu{
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('/media/gallery/004.webp') center/cover no-repeat;
+}
+[data-step="5"] .illu{
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('/media/gallery/005.webp') center/cover no-repeat;
+}
+[data-step="6"] .illu{
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('/media/gallery/006.webp') center/cover no-repeat;
+}
+[data-step="7"] .illu{
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('/media/gallery/007.webp') center/cover no-repeat;
+}
+[data-step="8"] .illu{
+    h5{
+        font-weight: 400;
+        font-size: $font-size;
+        text-shadow: none;
+    }
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('/media/gallery/008.webp') center/cover no-repeat;
+}
+[data-step="8"] .text{
+    h5{
+        font-weight: 400;
+        font-size: $font-size;
+        text-shadow: none;
+        text-align: justify;
+    }
+}
+
+@keyframes come-in {
+    from{
+        transform: translateX(10%);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}

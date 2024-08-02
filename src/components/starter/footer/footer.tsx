@@ -17,12 +17,12 @@ export default component$(() => {
                     </a>
                     <a href="wa.link.com" target="_blank">
                         <span>
-                            <img src={whatsapp} alt="icon whatsapp" width={32} height={32}/>
+                            <img src={whatsapp} alt="icon whatsapp" width={32} height={30}/>
                         </span>
                     </a>
                     <a href="" target="_blank">
                         <span>
-                            <img src={facebook} alt="icon facebook" width={32} height={32}/>
+                            <img src={facebook} alt="icon facebook" width={32} height={30}/>
                         </span>
                     </a>
                 </div>

@@ -7,7 +7,6 @@ export default component$(() => {
                 <a href="/" class="logo"></a>
                 <ul class="nav-links">
                     <li><a href="/pages/galerie">Galerie</a></li>
-                    <li><a href="/pages/strategie">Strategie</a></li>
                 </ul>
                 <div class="lang">
                     <label for="switch"></label>

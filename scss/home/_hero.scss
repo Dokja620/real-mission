@@ -21,7 +21,8 @@
         word-spacing: 15px;
         text-align: center;
         font-family: 'Arsilon';
-        color: var(--white-smoke);
+        color: var(--canary);
+        font-weight: 400;
         text-shadow: #000 0px 5px 10px, #000 0px 5px 10px;
     }
     // a{
@@ -42,11 +43,11 @@
     gap: $spacing;
     margin: $spacing-xs 0 0;
     a{
-        background: var(--azul);
+        background: var(--apple-green);
+        color: var(--rich-black);
         padding: $spacing-xs $spacing;
         border-radius: calc($spacing-xs - 4px);
         font-weight: 600;
-        color: var(--white-smoke);
         box-shadow: var(--rich-black) 0px 0px 15px, var(--rich-black) 0px 0px 25px;
     }
     @media (max-width: $breakpoint-md) {
