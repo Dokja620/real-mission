@@ -642,7 +642,7 @@ footer .principal {
 
 #swiper .swipe {
   display: flex;
-  min-height: 500px;
+  min-height: 450px;
   gap: 4.5em;
   align-items: center;
   position: relative;
@@ -652,7 +652,7 @@ footer .principal {
 
 #swiper .illu {
   width: 600px;
-  height: 400px;
+  height: 375px;
   border-radius: 1em;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1215686275), 0 5px 15px rgba(0, 0, 0, 0.137254902);
   animation: come-in 0.5s ease-in-out forwards;
@@ -748,7 +748,7 @@ footer .principal {
 }
 
 [data-step] .text p {
-  font-size: 1.75rem;
+  font-size: 1.5rem;
 }
 
 [data-step="1"] .illu {
@@ -791,7 +791,7 @@ footer .principal {
 
 [data-step="8"] .text h4 {
   font-weight: 400;
-  font-size: 1.75rem;
+  font-size: 1.5rem;
   text-shadow: none;
   text-align: justify;
 }
@@ -811,7 +811,7 @@ footer .principal {
   display: flex;
   gap: 6em;
   justify-content: space-evenly;
-  margin-bottom: 6em;
+  margin-bottom: 12em;
 }
 
 #stats .stats {

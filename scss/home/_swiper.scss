@@ -6,7 +6,7 @@
     place-content: center;
     .swipe{
         display: flex;
-        min-height: 500px;
+        min-height: 450px;
         gap: calc($spacing-xxl * 1.5);
         align-items: center;
         position: relative;
@@ -15,7 +15,7 @@
     }
     .illu{
         width: 600px;
-        height: 400px;
+        height: 375px;
         border-radius: $spacing;
         // background: url('/media/home/finality/001.webp') center/cover no-repeat;
         box-shadow: 0 4px 6px #0000001f, 0 5px 15px #00000023;
@@ -106,7 +106,7 @@
 // Big font size
 [data-step] .text{
     p{
-        font-size: $font-size-lg;
+        font-size: $font-size-md;
     }
 }
 
@@ -143,7 +143,7 @@
 [data-step="8"] .text{
     h4{
         font-weight: 400;
-        font-size: $font-size-lg;
+        font-size: $font-size-md;
         text-shadow: none;
         text-align: justify;
     }
