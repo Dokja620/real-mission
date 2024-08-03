@@ -1,20 +1,21 @@
 #swiper{
-    margin-top: calc($spacing-xxl * 3);
-    margin-bottom: calc($spacing-xxl * 3);
+    margin-top: calc($spacing-xxl * 2);
+    margin-bottom: calc($spacing-xxl * 2);
     // height: 100vh;
     display: grid;
     place-content: center;
     .swipe{
         display: flex;
-        gap: calc($spacing-xxl * 2);
+        min-height: 500px;
+        gap: calc($spacing-xxl * 1.5);
         align-items: center;
         position: relative;
         justify-content: space-evenly;
         padding-bottom: $spacing-xxl;
     }
     .illu{
-        width: 500px;
-        height: 300px;
+        width: 600px;
+        height: 400px;
         border-radius: $spacing;
         // background: url('/media/home/finality/001.webp') center/cover no-repeat;
         box-shadow: 0 4px 6px #0000001f, 0 5px 15px #00000023;
@@ -37,16 +38,16 @@
             // animation: ;
         }
     }
-    // h4{
-    //     text-shadow: #0000005b 0px 5px 10px, #00000050 0px 5px 10px;
-    // }
-    h5{
+    h3{
+        text-shadow: #0000004b 0px 5px 10px, #00000030 0px 5px 10px;
+    }
+    h4{
         text-shadow: #0000002b 0px 5px 10px, #00000020 0px 5px 10px;
     }
     
     .pagination{
         position: absolute;
-        left: 20%;
+        left: 15%;
         bottom: $spacing-xs;
         display: flex;
         justify-content: center;
@@ -102,6 +103,14 @@
     }
 }
 
+// Big font size
+[data-step] .text{
+    p{
+        font-size: $font-size-lg;
+    }
+}
+
+// Bgs for each swiper step
 [data-step="1"] .illu{
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('/media/gallery/001.webp') center/cover no-repeat;
 }
@@ -132,9 +141,9 @@
     }
 }
 [data-step="8"] .text{
-    h5{
+    h4{
         font-weight: 400;
-        font-size: $font-size;
+        font-size: $font-size-lg;
         text-shadow: none;
         text-align: justify;
     }

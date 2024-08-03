@@ -634,15 +634,16 @@ footer .principal {
 }
 
 #swiper {
-  margin-top: 9em;
-  margin-bottom: 9em;
+  margin-top: 6em;
+  margin-bottom: 6em;
   display: grid;
   place-content: center;
 }
 
 #swiper .swipe {
   display: flex;
-  gap: 6em;
+  min-height: 500px;
+  gap: 4.5em;
   align-items: center;
   position: relative;
   justify-content: space-evenly;
@@ -650,8 +651,8 @@ footer .principal {
 }
 
 #swiper .illu {
-  width: 500px;
-  height: 300px;
+  width: 600px;
+  height: 400px;
   border-radius: 1em;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1215686275), 0 5px 15px rgba(0, 0, 0, 0.137254902);
   animation: come-in 0.5s ease-in-out forwards;
@@ -676,13 +677,17 @@ footer .principal {
   animation: come-in 0.5s ease-in-out 0.1s forwards;
 }
 
-#swiper h5 {
+#swiper h3 {
+  text-shadow: rgba(0, 0, 0, 0.2941176471) 0px 5px 10px, rgba(0, 0, 0, 0.1882352941) 0px 5px 10px;
+}
+
+#swiper h4 {
   text-shadow: rgba(0, 0, 0, 0.168627451) 0px 5px 10px, rgba(0, 0, 0, 0.1254901961) 0px 5px 10px;
 }
 
 #swiper .pagination {
   position: absolute;
-  left: 20%;
+  left: 15%;
   bottom: 0.6666666667em;
   display: flex;
   justify-content: center;
@@ -742,6 +747,10 @@ footer .principal {
   transition: transform 0.25s ease-in-out;
 }
 
+[data-step] .text p {
+  font-size: 1.75rem;
+}
+
 [data-step="1"] .illu {
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("/media/gallery/001.webp") center/cover no-repeat;
 }
@@ -780,9 +789,9 @@ footer .principal {
   text-shadow: none;
 }
 
-[data-step="8"] .text h5 {
+[data-step="8"] .text h4 {
   font-weight: 400;
-  font-size: 1rem;
+  font-size: 1.75rem;
   text-shadow: none;
   text-align: justify;
 }
@@ -795,6 +804,59 @@ footer .principal {
   to {
     opacity: 1;
     transform: translateX(0);
+  }
+}
+
+#stats {
+  display: flex;
+  gap: 6em;
+  justify-content: space-evenly;
+  margin-bottom: 6em;
+}
+
+#stats .stats {
+  text-align: center;
+}
+
+#stats .stats h1 :nth-child(1) {
+  animation: falling 0.5s cubic-bezier(0.95, 0.53, 0.02, 1.26) forwards, falling-opacity 0.5s ease-in-out forwards;
+}
+
+#stats .stats h1 :nth-child(2) {
+  animation: falling 0.5s cubic-bezier(0.95, 0.53, 0.02, 1.26) 0.1s forwards, falling-opacity 0.5s ease-in-out 0.1s forwards;
+}
+
+#stats .stats h1 :nth-child(3) {
+  animation: falling 0.5s cubic-bezier(0.95, 0.53, 0.02, 1.26) 0.15s forwards, falling-opacity 0.5s ease-in-out 0.15s forwards;
+}
+
+#stats .stats h1 span {
+  display: none;
+  font-weight: inherit;
+  opacity: 0;
+}
+
+#stats .stats h1.is-in-view span {
+  display: inline-block;
+}
+
+@keyframes falling {
+  from {
+    transform: translateY(-25%);
+  }
+
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes falling-opacity {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
   }
 }
 

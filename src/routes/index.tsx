@@ -6,12 +6,14 @@ import { GetTop } from "~/components/get-to-top";
 import { Contact } from "~/components/contact";
 import { Swiper } from "./sections/swiper";
 import { Map } from "./sections/map";
+import { Stats } from "./sections/stats";
 
 export default component$(() => {
   return (
     <>
       <Hero/>
       <Swiper/>
+      <Stats/>
       <Founder/>
       {/* <Map/> */}
       <GetTop/>
