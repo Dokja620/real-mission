@@ -21,14 +21,14 @@
         filter: grayscale(1);
         height: 20px;
         width: 30px;
+        // transition: .25s filter ease-in-out;
+        cursor: pointer;
         &:nth-child(1){
             background: url('/media/icons/french.svg') center/30px no-repeat;
         }
         &:nth-child(2){
             background: url('/media/icons/english.svg') center/35px no-repeat;
         }
-        // transition: .25s filter ease-in-out;
-        cursor: pointer;
         &:hover{
             filter: grayscale(0);
         }

@@ -1599,8 +1599,8 @@ footer .principal {
 }
 
 #gallery .see-more h4 {
-  position: relative;
   z-index: 1;
+  position: relative;
 }
 
 #gallery .see-more h4::before {

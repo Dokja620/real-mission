@@ -36,9 +36,6 @@
 
     form{
         position: relative;
-        input{
-            margin: 0 0 $spacing;
-        }
         display: grid;
         border-radius: $spacing;
         padding: $spacing-lg;
@@ -46,6 +43,10 @@
         box-shadow: 0 4px 6px #0000001f, 0 5px 15px #00000023;
         position: relative;
         background: white;
+        width: 500px;
+        input{
+            margin: 0 0 $spacing;
+        }
         &::before{
             content: '';
             position: absolute;
@@ -82,7 +83,7 @@
             color: white;
             border-radius: $spacing-xs;
         }
-
+        
         .close{
             position: absolute;
             top: $spacing-xs;
@@ -113,7 +114,6 @@
             }
         }
 
-        width: 500px;
         @media (max-width: $breakpoint-sm){
             width: 85vw;
         }

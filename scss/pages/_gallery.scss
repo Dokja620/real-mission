@@ -42,8 +42,8 @@
         position: relative;
         background: white url('/media/icons/Sprinkle.svg');
         h4{
-            @include underline();
             z-index: 1;
+            @include underline();
         }
         &::before{
             content: '';
