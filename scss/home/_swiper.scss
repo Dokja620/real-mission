@@ -35,6 +35,7 @@
             }
         }
         @media (max-width: $breakpoint-md) {
+            gap: 0;
             .illu{
                 height: 250px;            
             }

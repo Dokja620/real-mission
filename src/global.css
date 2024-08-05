@@ -24,7 +24,19 @@
 
 body {
   min-height: 100dvh;
-  background: var(--azul);
+  background: var(--picton-blue);
+  position: relative;
+}
+
+body::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 110vh;
+  background: linear-gradient(to bottom, var(--azul) 90%, transparent);
+  z-index: -1;
 }
 
 /* poppins-regular - latin */
@@ -459,7 +471,7 @@ footer .principal {
 /*xs*/
 
 #contact {
-  display: grid;
+  display: none;
   position: fixed;
   top: 50%;
   left: 50%;
@@ -1751,12 +1763,20 @@ section {
 }
 
 @media (max-width: 768px) {
+  body::after {
+    height: 85vh;
+  }
+
   .container {
     max-width: 640px;
   }
 
   .c-t-a a {
     padding: 4px 8px;
+  }
+
+  #swiper .swipe {
+    gap: 0;
   }
 
   #swiper .swipe .illu {
@@ -1773,6 +1793,10 @@ section {
 }
 
 @media (max-width: 640px) {
+  body::after {
+    height: 75vh;
+  }
+
   h4 {
     font-size: clamp(1.3rem, 4vw, 2.4rem);
   }
@@ -1814,6 +1838,10 @@ section {
 }
 
 @media (max-width: 475px) {
+  body::after {
+    height: 65vh;
+  }
+
   footer .principal {
     display: flex;
   }
