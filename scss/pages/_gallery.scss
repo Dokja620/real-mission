@@ -38,36 +38,12 @@
         border: none;
         border-radius: $spacing;
         padding: $spacing;
-        // box-shadow: 0 4px 6px #0000001f, 0 5px 15px #00000023;
+        box-shadow: 0 4px 6px #0000001f, 0 5px 15px #00000023;
         position: relative;
-        background: white url('/media/icons/Sprinkle.svg');
-        h4{
-            z-index: 1;
-            @include underline();
-        }
-        &::before{
-            content: '';
-            position: absolute;
-            bottom: -$spacing-xs;
-            right: -$spacing-xs;
-            height: 50px;
-            width: 70px;
-            border-radius: 4px 4px $spacing-md 4px;
-            background: var(--green-apple);
-            box-shadow: 0 4px 6px #0000001f, 0 5px 15px #00000023;
-            z-index: -1;
-        }
-        &::after{
-            content: '';
-            position: absolute;
-            top: -$spacing-xs;
-            left: -$spacing-xs;
-            height: 50px;
-            width: 70px;
-            border-radius: $spacing-md 4px 4px 4px;
-            background: var(--canary);
-            box-shadow: 0 4px 6px #0000001f, 0 5px 15px #00000023;
-            z-index: -1;
+        background: #ffffff1f url('/media/icons/Sprinkle.svg');
+        backdrop-filter: blur(5px);
+        h5{
+            color: var(--rich-black);
         }
     }
     @media (max-width: $breakpoint-lg) {

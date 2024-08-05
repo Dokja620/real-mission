@@ -7,13 +7,13 @@
         text-align: center;
         h1{
             :nth-child(1){
-                animation: falling .5s cubic-bezier(0.95, 0.53, 0.02, 1.26) forwards, falling-opacity .5s ease-in-out forwards;
+                animation: falling .5s cubic-bezier(0.95, 0.53, 0.02, 1.26) .2s forwards, falling-opacity .5s ease-in-out .2s forwards;
             }
             :nth-child(2){
-                animation: falling .5s cubic-bezier(0.95, 0.53, 0.02, 1.26) .1s forwards, falling-opacity .5s ease-in-out .1s forwards;
+                animation: falling .5s cubic-bezier(0.95, 0.53, 0.02, 1.26) .3s forwards, falling-opacity .5s ease-in-out .3s forwards;
             }
             :nth-child(3){
-                animation: falling .5s cubic-bezier(0.95, 0.53, 0.02, 1.26) .15s forwards, falling-opacity .5s ease-in-out .15s forwards;
+                animation: falling .5s cubic-bezier(0.95, 0.53, 0.02, 1.26) .4s forwards, falling-opacity .5s ease-in-out .4s forwards;
             }
             span{
                 display: none;
@@ -26,6 +26,11 @@
                 }
             }
         }
+    }
+    @media (max-width: $breakpoint-sm) {
+        gap: $spacing-lg;
+        justify-content: space-around;
+        margin-bottom: calc($spacing-xxl * 2);
     }
 }
 

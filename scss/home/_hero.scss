@@ -43,6 +43,7 @@
     gap: $spacing;
     margin: $spacing-xs 0 0;
     a{
+        text-align: center;
         background: var(--apple-green);
         color: var(--rich-black);
         padding: $spacing-xs $spacing;

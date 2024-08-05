@@ -88,7 +88,7 @@ body:has(.lang input:not(:checked)) {
 }
 
 [lang-switch]{
-    animation: fade-in .75s ease-in-out forwards;
+    // animation: fade-in .75s ease-in-out forwards;
 }
 
 @keyframes fade-in {

@@ -6,7 +6,8 @@ export default component$(() => {
             <nav>
                 <a href="/" class="logo"></a>
                 <ul class="nav-links">
-                    <li><a href="/pages/galerie">Galerie</a></li>
+                    <li><a href="/pages/galerie" lang-switch="french">Galerie</a></li>
+                    <li><a href="/pages/galerie" lang-switch="english">Gallery</a></li>
                 </ul>
                 <div class="lang">
                     <label for="switch"></label>

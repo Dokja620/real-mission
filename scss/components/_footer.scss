@@ -6,7 +6,7 @@ footer{
         height: 84px;
         flex-shrink: 0;
         background: url('/media/icons/logo.webp') center/cover no-repeat;
-        mix-blend-mode: multiply;
+        filter: drop-shadow(0 0 2px rgba(255, 255, 255, 0.562));
     }
     .principal{
         display: none;
@@ -43,7 +43,7 @@ footer{
         display: flex;
         gap: $spacing-xs;
         padding-left: $spacing;
-        span{
+        span:has(img){
             background: var(--white-smoke);
             padding: 2px 8px;
             border-radius: 12px;
