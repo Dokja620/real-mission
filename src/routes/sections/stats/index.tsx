@@ -16,6 +16,7 @@ const stats = [
 ];
 
 export const Stats = component$(() => {
+  // eslint-disable-next-line qwik/no-use-visible-task
   useVisibleTask$(() => {
     const addIsInViewClass = (entries: { target: any; isIntersecting: any; }[]) => {
       entries.forEach((entry: { target: any; isIntersecting: any; }) => {
