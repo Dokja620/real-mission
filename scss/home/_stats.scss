@@ -1,0 +1,52 @@
+#stats{
+    display: flex;
+    gap: calc($spacing-xxl * 2);
+    justify-content: space-evenly;
+    margin-bottom: calc($spacing-xxl * 4);
+    .stats{
+        text-align: center;
+        h1{
+            :nth-child(1){
+                animation: falling .5s cubic-bezier(0.95, 0.53, 0.02, 1.26) .2s forwards, falling-opacity .5s ease-in-out .2s forwards;
+            }
+            :nth-child(2){
+                animation: falling .5s cubic-bezier(0.95, 0.53, 0.02, 1.26) .3s forwards, falling-opacity .5s ease-in-out .3s forwards;
+            }
+            :nth-child(3){
+                animation: falling .5s cubic-bezier(0.95, 0.53, 0.02, 1.26) .4s forwards, falling-opacity .5s ease-in-out .4s forwards;
+            }
+            span{
+                display: none;
+                font-weight: inherit;
+                opacity: 0;
+            }
+            &.is-in-view{
+                span{
+                    display: inline-block;
+                }
+            }
+        }
+    }
+    @media (max-width: $breakpoint-sm) {
+        gap: $spacing-lg;
+        justify-content: space-around;
+        margin-bottom: calc($spacing-xxl * 2);
+    }
+}
+
+@keyframes falling {
+    from{
+        transform: translateY(-25%);
+    }
+    to{
+        transform: translateY(0);
+    }
+}
+@keyframes falling-opacity {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}

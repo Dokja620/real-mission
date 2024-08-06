@@ -21,14 +21,14 @@
         filter: grayscale(1);
         height: 20px;
         width: 30px;
+        // transition: .25s filter ease-in-out;
+        cursor: pointer;
         &:nth-child(1){
             background: url('/media/icons/french.svg') center/30px no-repeat;
         }
         &:nth-child(2){
             background: url('/media/icons/english.svg') center/35px no-repeat;
         }
-        // transition: .25s filter ease-in-out;
-        cursor: pointer;
         &:hover{
             filter: grayscale(0);
         }
@@ -60,9 +60,42 @@
 // body:has(.language input:checked) * [lang="en"]{
 //     display: block;
 // }
+
+// Flags active | inactive
 body:has(.lang input:checked) .lang .flag span:nth-child(1){
     filter: grayscale(0);
 }
 body:has(.lang input:not(:checked)) .lang .flag span:nth-child(2){
     filter: grayscale(0);
+}
+
+// text changes
+body:has(.lang input:checked) {
+    [lang-switch=french]{
+        display: block;
+    }
+    [lang-switch=english]{
+        display: none;
+    }
+}
+body:has(.lang input:not(:checked)) {
+    [lang-switch=french]{
+        display: none;
+    }
+    [lang-switch=english]{
+        display: block;
+    }
+}
+
+[lang-switch]{
+    // animation: fade-in .75s ease-in-out forwards;
+}
+
+@keyframes fade-in {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
 }

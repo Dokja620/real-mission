@@ -21,3 +21,4 @@ export const Gallery = component$(() => {
         </section>
     );
 });
+

@@ -110,6 +110,10 @@ h5 {font-size: 1.333rem; /* 21.28px */}
 
 small {font-size: 0.750rem; /* 12px */}
 
+p{
+    text-align: justify;
+}
+
 @media (max-width: $breakpoint-lg) {
     h1{
         font-size: clamp(1.5rem, 7vw, 3rem);

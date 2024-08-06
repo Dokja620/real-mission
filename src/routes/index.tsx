@@ -1,27 +1,30 @@
-import { component$ } from "@builder.io/qwik";
+import { component$, $, useSignal } from "@builder.io/qwik";
 import type { DocumentHead } from "@builder.io/qwik-city";
 import { Hero } from "./sections/hero";
 import { Founder } from "./sections/founder";
-import { Goal } from "./sections/goal";
-import { Process } from "./sections/process";
-import { Way } from "./sections/way";
-import { CallToAction } from "./sections/c-t-a";
-// import { Gallerycta } from "./sections/gallery";
 import { GetTop } from "~/components/get-to-top";
 import { Contact } from "~/components/contact";
+import { Swiper } from "./sections/swiper";
+// import { Map } from "./sections/map";
+import { Stats } from "./sections/stats";
 
 export default component$(() => {
+  const isContactVisible = useSignal(false);
+
+  // Wrap the function in $() to ensure serialization
+  const toggleContactVisibility = $(() => {
+    isContactVisible.value = !isContactVisible.value;
+  });
+
   return (
     <>
-      <Hero/>
-      <Goal/>
-      <Process/>
-      <Way/>
-      <Founder/>
-      <CallToAction/>
-      {/* <Gallerycta/> */}
-      <GetTop/>
-      <Contact/>
+      <Hero onContactClick$={toggleContactVisibility} />
+      <Swiper />
+      <Stats />
+      <Founder />
+      {/* <Map/> */}
+      <GetTop />
+      {isContactVisible.value && <Contact onClose$={toggleContactVisibility} />}
     </>
   );
 });
