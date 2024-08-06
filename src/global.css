@@ -620,14 +620,18 @@ footer .principal {
   margin: 0.6666666667em 0 0;
 }
 
-.c-t-a a {
+.c-t-a a,
+.c-t-a button {
   text-align: center;
   background: var(--apple-green);
   color: var(--rich-black);
   padding: 0.6666666667em 1em;
   border-radius: calc(0.6666666667em - 4px);
+  border: none;
   font-weight: 600;
+  font-size: 1rem;
   box-shadow: var(--rich-black) 0px 0px 15px, var(--rich-black) 0px 0px 25px;
+  cursor: pointer;
 }
 
 #swiper {
@@ -1771,8 +1775,10 @@ section {
     max-width: 640px;
   }
 
-  .c-t-a a {
-    padding: 4px 8px;
+  .c-t-a a,
+  .c-t-a button {
+    padding: 6px 12px;
+    font-size: calc(1rem - 2px);
   }
 
   #swiper .swipe {
