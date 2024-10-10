@@ -2,7 +2,7 @@
 :root {
     /* CSS HSL */
     --picton-blue: hsla(200, 75%, 55%, 1);
-    --azul: hsla(208, 73%, 42%, 1);
+    --azul: #1d70b9;
     --apple-green: hsla(77, 73%, 44%, 1);
     --green-apple: hsl(96, 100%, 50%);
     --canary: hsla(56, 100%, 50%, 1);
@@ -27,7 +27,8 @@ body {
     min-height: 100dvh;
     background: var(--picton-blue);
     position: relative;
-    &::after{
+
+    &::after {
         content: '';
         position: absolute;
         top: 0;
@@ -36,12 +37,15 @@ body {
         height: 110vh;
         background: linear-gradient(to bottom, var(--azul) 90%, transparent);
         z-index: -1;
+
         @media (max-width: $breakpoint-md) {
             height: 85vh;
         }
+
         @media (max-width: $breakpoint-sm) {
             height: 75vh;
         }
+
         @media (max-width: $breakpoint-xs) {
             height: 65vh;
         }
@@ -71,6 +75,6 @@ body {
 
 // Pages
 
-section{
+section {
     margin: 0 0 $spacing-xxl;
 }

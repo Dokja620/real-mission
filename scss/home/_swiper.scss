@@ -1,10 +1,11 @@
-#swiper{
+#swiper {
     margin-top: calc($spacing-xxl * 2);
     margin-bottom: calc($spacing-xxl * 2);
     // height: 100vh;
     display: grid;
     place-content: center;
-    .swipe{
+
+    .swipe {
         display: flex;
         min-height: 450px;
         gap: calc($spacing-xxl * 1.5);
@@ -12,51 +13,64 @@
         position: relative;
         justify-content: space-evenly;
         padding-bottom: $spacing-xxl;
+
         @media (max-width: $breakpoint-xl) {
             // background: red;
             margin: 0 $spacing-xxl;
         }
+
         @media (max-width: $breakpoint-lg) {
             flex-direction: column;
             margin: 0 $spacing;
             overflow: hidden;
             gap: $spacing;
-            .illu{
-                width: 100%;            
+
+            .illu {
+                width: 100%;
                 order: 1;
             }
-            .text{
+
+            .text {
                 max-width: none;
                 order: 2;
             }
-            .pagination{
+
+            .pagination {
                 left: 50%;
                 transform: translate(-50%);
             }
         }
+
         @media (max-width: $breakpoint-md) {
             gap: 0;
-            .illu{
-                height: 250px;            
+
+            .illu {
+                height: 250px;
             }
-            p{
+
+            p {
                 font-size: $font-size;
             }
         }
+
         @media (max-width: $breakpoint-sm) {
             height: 500px;
-            .illu{
-                height: 150px;            
+
+            .illu {
+                height: 150px;
             }
-            h3{
+
+            h3 {
                 font-size: $font-size-lg;
             }
         }
     }
+
     @media (max-width: $breakpoint-lg) {
         place-content: initial;
     }
-    .illu{
+
+    .illu {
         width: 600px;
         height: 375px;
         border-radius: $spacing;
@@ -64,30 +78,37 @@
         box-shadow: 0 4px 6px #0000001f, 0 5px 15px #00000023;
         animation: come-in .5s ease-in-out forwards;
     }
-    .text{
+
+    .text {
         max-width: 600px;
-        :nth-child(1){
+
+        :nth-child(1) {
             opacity: 0;
             animation: come-in .5s ease-in-out forwards;
         }
-        :nth-child(2){
+
+        :nth-child(2) {
             opacity: 0;
             animation: come-in .5s ease-in-out .05s forwards;
             // animation: ;
         }
-        :nth-child(3){
+
+        :nth-child(3) {
             opacity: 0;
             animation: come-in .5s ease-in-out .10s forwards;
             // animation: ;
         }
     }
-    h3{
+
+    h3 {
         text-shadow: #0000004b 0px 5px 10px, #00000030 0px 5px 10px;
     }
-    h4{
+
+    h4 {
         text-shadow: #0000002b 0px 5px 10px, #00000020 0px 5px 10px;
     }
-    .pagination{
+
+    .pagination {
         position: absolute;
         left: 15%;
         bottom: $spacing-xs;
@@ -95,7 +116,8 @@
         justify-content: center;
         gap: $spacing;
         align-self: flex-end;
-        span{
+
+        span {
             height: 10px;
             aspect-ratio: 1/1;
             border-radius: 50%;
@@ -104,18 +126,22 @@
             position: relative;
             transition: all .25s ease-in-out;
             box-shadow: 0px 0px 5px #0000004b, 0px 0px rgba(0, 0, 0, 0.308) #000;
-            &:hover::after{
+
+            &:hover::after {
                 transform: translate(-3px, -50%) scale(1.1);
             }
-            &:hover.active::after{
+
+            &:hover.active::after {
                 transform: translate(-3px, -50%) scale(1.1);
             }
-            &.active{
+
+            &.active {
                 width: 20px;
                 border-radius: 5px;
                 // background: red;
             }
-            &.active::after{
+
+            &.active::after {
                 position: absolute;
                 content: '';
                 top: 50%;
@@ -128,7 +154,8 @@
                 box-shadow: 0px 0px 8px #00000088;
                 transition: transform .25s ease-in-out;
             }
-            &::after{
+
+            &::after {
                 position: absolute;
                 content: '';
                 top: 50%;
@@ -146,43 +173,60 @@
 }
 
 // Big font size
-[data-step] .text{
-    p{
+[data-step] .text {
+    p {
         font-size: $font-size-md;
     }
 }
 
 // Bgs for each swiper step
-[data-step="1"] .illu{
+[data-step="1"] .illu {
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('/media/swiper/001.webp') center/cover no-repeat;
 }
-[data-step="2"] .illu{
+
+[data-step="2"] .illu {
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('/media/swiper/002.webp') center/cover no-repeat;
 }
-[data-step="3"] .illu{
+
+[data-step="3"] .illu {
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('/media/swiper/003.webp') center/cover no-repeat;
 }
-[data-step="4"] .illu{
+
+[data-step="4"] .illu {
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('/media/swiper/004.webp') center/cover no-repeat;
 }
-[data-step="5"] .illu{
+
+[data-step="5"] .illu {
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('/media/swiper/005.webp') center/cover no-repeat;
 }
-[data-step="6"] .illu{
+
+[data-step="6"] .illu {
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('/media/swiper/006.webp') center/cover no-repeat;
 }
-[data-step="7"] .illu{
+
+[data-step="7"] .illu {
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('/media/swiper/007.webp') center/cover no-repeat;
 }
-[data-step="8"] .illu{
+
+[data-step="8"] .illu {
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('/media/gallery/008.webp') center/cover no-repeat;
 }
-[data-step="8"] .text{
-    h4{
+
+[data-step="9"] .illu {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('/media/gallery/008.webp') center/cover no-repeat;
+}
+
+[data-step="10"] .illu {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('/media/gallery/008.webp') center/cover no-repeat;
+}
+
+[data-step="8"] .text {
+    h4 {
         font-weight: 400;
         font-size: $font-size-md;
         text-shadow: none;
         text-align: justify;
+
         @media (max-width: $breakpoint-md) {
             font-size: $font-size;
         }
@@ -190,10 +234,11 @@
 }
 
 @keyframes come-in {
-    from{
+    from {
         transform: translateX(10%);
     }
-    to{
+
+    to {
         opacity: 1;
         transform: translateX(0);
     }
