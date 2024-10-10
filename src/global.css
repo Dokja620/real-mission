@@ -3,7 +3,7 @@
 :root {
   /* CSS HSL */
   --picton-blue: hsla(200, 75%, 55%, 1);
-  --azul: hsla(208, 73%, 42%, 1);
+  --azul: #1d70b9;
   --apple-green: hsla(77, 73%, 44%, 1);
   --green-apple: hsl(96, 100%, 50%);
   --canary: hsla(56, 100%, 50%, 1);
@@ -381,7 +381,7 @@ nav {
 
 footer {
   padding: 3em 1em 1em;
-  background: color-mix(in srgb, var(--picton-blue), transparent 0%);
+  background: var(--azul);
 }
 
 footer .logo {
@@ -784,6 +784,14 @@ footer .principal {
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("/media/gallery/008.webp") center/cover no-repeat;
 }
 
+[data-step="9"] .illu {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("/media/gallery/008.webp") center/cover no-repeat;
+}
+
+[data-step="10"] .illu {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("/media/gallery/008.webp") center/cover no-repeat;
+}
+
 [data-step="8"] .text h4 {
   font-weight: 400;
   font-size: 1.5rem;
@@ -866,7 +874,7 @@ footer .principal {
 
 #founder .image {
   clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
-  background: url("/media/home/founder.webp") 0% 50%/cover no-repeat;
+  background: url("/media/home/found.webp") right center/cover no-repeat;
   height: 55vh;
   width: 500px;
 }
@@ -1744,7 +1752,7 @@ section {
     margin: 0 0 1.75em;
     border-radius: 1em;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1215686275), 0 5px 15px rgba(0, 0, 0, 0.137254902);
-    background: url("/media/home/founder.webp") top center/cover no-repeat;
+    background: url("/media/home/found.webp") right center/cover no-repeat;
   }
 
   #founder .image img {
