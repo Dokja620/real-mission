@@ -989,7 +989,7 @@ footer .principal {
 
 #card .title button {
   width: 40px;
-  background: color-mix(in srgb, black, transparent 10%);
+  background: color-mix(in srgb, black, transparent 20%);
   border: none;
   border-radius: 8px;
   font-size: 20px;
