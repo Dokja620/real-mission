@@ -12,7 +12,6 @@ export const Gallery = component$(() => {
                 </div>
                 <div class="title">
                     <h4>Agriculture</h4>
-                    <button>. . .</button>
                 </div>
             </a>
             <a href="/pages/galerie/education" id="card" class="card">
@@ -21,7 +20,6 @@ export const Gallery = component$(() => {
                 </div>
                 <div class="title">
                     <h4>Education</h4>
-                    <button>. . .</button>
                 </div>
             </a>
             <a href="/pages/galerie/school" id="card" class="card">
@@ -30,7 +28,6 @@ export const Gallery = component$(() => {
                 </div>
                 <div class="title">
                     <h4>School of Real Mission</h4>
-                    <button>. . .</button>
                 </div>
             </a>
         </section>
