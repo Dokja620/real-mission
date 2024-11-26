@@ -6,7 +6,7 @@ import BackgroundSchool from '/public/media/gall/School/001.webp?jsx';
 export const Gallery = component$(() => {
     return (
         <section id="gallery" class="container">
-            <a href="/page/galerie/agriculture" id="card" class="card">
+            <a href="/pages/galerie/agriculture" id="card" class="card">
                 <div class="bg">
                     <BackgroundAgri/>
                 </div>
@@ -15,7 +15,7 @@ export const Gallery = component$(() => {
                     <button>. . .</button>
                 </div>
             </a>
-            <a href="/page/galerie/education" id="card" class="card">
+            <a href="/pages/galerie/education" id="card" class="card">
                 <div class="bg">
                     <BackgroundEdu/>
                 </div>
@@ -24,7 +24,7 @@ export const Gallery = component$(() => {
                     <button>. . .</button>
                 </div>
             </a>
-            <a href="/page/galerie/school" id="card" class="card">
+            <a href="/pages/galerie/school" id="card" class="card">
                 <div class="bg">
                     <BackgroundSchool/>
                 </div>
