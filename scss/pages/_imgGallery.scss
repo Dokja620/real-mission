@@ -1,3 +1,5 @@
+@use 'sass:math';
+
 #card{
     border-radius: $spacing;
     overflow: hidden;
@@ -19,12 +21,14 @@
         left: 50%;
         transform: translateX(-50%);
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         background: white;
         border-radius: $spacing-xs;
         padding: 4px 4px 4px $spacing-xs;
         h4{
             color: black;
+            text-align: center;
+            background: re;
         }
         button{
             width: 40px;
@@ -37,9 +41,6 @@
         }
     }
 }
-
-
-@use 'sass:math';
 
 .imgallery {
   display: grid;
