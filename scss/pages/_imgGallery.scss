@@ -16,19 +16,17 @@
     }
     .title{
         position: absolute;
-        width: 95%;
-        bottom: 5%;
+        width: 100%;
+        bottom: 0;
         left: 50%;
+        background: #0000004f;
         transform: translateX(-50%);
         display: flex;
         justify-content: center;
-        background: white;
         border-radius: $spacing-xs;
         padding: 4px 4px 4px $spacing-xs;
         h4{
-            color: black;
             text-align: center;
-            background: re;
         }
         button{
             width: 40px;

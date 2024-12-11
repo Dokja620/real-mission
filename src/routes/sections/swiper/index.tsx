@@ -4,14 +4,14 @@ const swiperData = [
     {
         h3: 'NOTRE VISION',
         h4: '| UNE DES ORGANISATIONS LES PLUS PROLIFIQUES POUR L’ENVOI DE MISSIONNAIRES EN AFRIQUE.',
-        p: 'Dieu exhorte tous les chrétiens pour être intégrer dans sa divine vision, et gagner son objectif. Toutes les actions entreprises soient accomplies dans l’authenticité, dans l’honnêteté et à travers l’intégrité.',
+        p: 'Dieu exhorte tous les chrétiens pour être intégrés dans sa divine vision, et gagner son objectif. Toutes les actions entreprises soient accomplies dans l’authenticité, dans l’honnêteté et à travers l’intégrité.',
         h3_English: 'OUR VISION',
         h4_English: "| ONE OF THE MOST PROLIFIC ORGANIZATIONS FOR SENDING MISSIONARIES TO AFRICA.",
         p_English: 'God exhorts all Christians to embrace His divine vision and fulfill His will. Every action undertaken is carried out with authenticity, honesty, and integrity.',
     },
     {
         h3: 'NOS MISSIONS',
-        h4: "| DIFFUSER L'EVANGILE AU SEIN DE LA SOCIETE. MOBLISIER  L’EGLISE POUR FORMER DES DISCIPLES",
+        h4: "| DIFFUSER L'EVANGILE AU SEIN DE LA SOCIETE. MOBILISER  L’EGLISE POUR FORMER DES DISCIPLES",
         p: 'L’évangélisation, et le discipôlat sont les fondements de la mission. C’est ce qu’on appelle « L’EMINENTE MISSION » accomplir celle-ci est la raison d’être et la raison de vivre des chrétiens. ',
         h3_English: 'OUR  MISSIONS',
         h4_English: '| SPREAD THE GOSPEL WITHIN SOCIETY. MOBILIZE THE CHURCH TO TRAIN DISCIPLES ',

@@ -2,16 +2,20 @@ import { component$, useVisibleTask$ } from '@builder.io/qwik';
 
 const stats = [
   {
-    numbers: '075',
-    label: 'Stat 01',
+    numbers: '09',
+    label: 'Antennes',
+  },
+  {
+    numbers: '300',
+    label: 'Membres',
   },
   {
     numbers: '100',
-    label: 'Stat 02',
+    label: 'Sites visités',
   },
   {
     numbers: '008',
-    label: 'Stat 03',
+    label: 'Missions réalisées',
   },
 ];
 

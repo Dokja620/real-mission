@@ -32,12 +32,12 @@ export default component$(() => {
                 </div>
                 <div class="get-in-touch">
                     {/* <h5>Nous contacter</h5> */}
-                    <a href="mailto:">
+                    <a href="mailto:realmissionmovement@gmail.com">
                         <span>
                             <img src={gmail} alt="icon mail" width={24} height={24}/>
                         </span>
                         <span>
-                            this.is.a.gmail@gmail.com
+                            realmissionmovement@gmail.com
                         </span>
                     </a>
                     <a href="wa.link.com" target="_blank">
@@ -45,7 +45,7 @@ export default component$(() => {
                             <img src={whatsapp} alt="icon whatsapp" width={24} height={24}/>
                         </span>
                         <span>
-                            +261 33 00 000 00
+                            +261 34 40 383 41
                         </span>
                     </a>
                     <a href="" target="_blank">

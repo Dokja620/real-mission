@@ -598,6 +598,8 @@ footer .principal {
 }
 
 #hero h1 {
+  font-weight: 500;
+  font-family: "";
   text-align: center;
   color: var(--white-smoke);
   text-shadow: #000 0px 5px 10px, #000 0px 5px 10px;
@@ -781,15 +783,15 @@ footer .principal {
 }
 
 [data-step="8"] .illu {
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("/media/gallery/008.webp") center/cover no-repeat;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("/media/swiper/008.webp") center/cover no-repeat;
 }
 
 [data-step="9"] .illu {
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("/media/gallery/008.webp") center/cover no-repeat;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("/media/swiper/008.webp") center/cover no-repeat;
 }
 
 [data-step="10"] .illu {
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("/media/gallery/008.webp") center/cover no-repeat;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("/media/swiper/008.webp") center/cover no-repeat;
 }
 
 [data-step="8"] .text h4 {
@@ -934,10 +936,10 @@ footer .principal {
   text-align: center;
   display: grid;
   place-content: center;
-  background: url("/media/icons/Sprinkle.svg");
 }
 
-#title h1 {
+#title h2 {
+  font-weight: 600;
   text-shadow: rgba(0, 0, 0, 0.3568627451) 0px 5px 10px, rgba(0, 0, 0, 0.3137254902) 0px 5px 10px;
 }
 
@@ -971,21 +973,19 @@ footer .principal {
 
 #card .title {
   position: absolute;
-  width: 95%;
-  bottom: 5%;
+  width: 100%;
+  bottom: 0;
   left: 50%;
+  background: rgba(0, 0, 0, 0.3098039216);
   transform: translateX(-50%);
   display: flex;
   justify-content: center;
-  background: white;
   border-radius: 0.6666666667em;
   padding: 4px 4px 4px 0.6666666667em;
 }
 
 #card .title h4 {
-  color: black;
   text-align: center;
-  background: re;
 }
 
 #card .title button {
