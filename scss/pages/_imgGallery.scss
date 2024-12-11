@@ -1,0 +1,141 @@
+@use 'sass:math';
+
+#card{
+    border-radius: $spacing;
+    overflow: hidden;
+    height: 300px;
+    position: relative;
+    .bg{
+        width: auto;
+        height: 100%;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    .title{
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+        left: 50%;
+        background: #0000004f;
+        transform: translateX(-50%);
+        display: flex;
+        justify-content: center;
+        border-radius: $spacing-xs;
+        padding: 4px 4px 4px $spacing-xs;
+        h4{
+            text-align: center;
+        }
+        button{
+            width: 40px;
+            background: black;
+            border: none;
+            border-radius: 8px;
+            font-size: 20px;
+            font-weight: 800;
+            cursor: pointer;
+        }
+    }
+}
+
+.imgallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  grid-auto-rows: 250px;
+  gap: $spacing;
+  margin-top: $spacing-xxl;
+  margin-bottom: $spacing-xxl;
+
+  .card {
+    background: white;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    border-radius: $spacing;
+    overflow: hidden;
+    transition: .2s;
+    
+    &:hover {
+      transform: scale(1.025);
+    }
+
+    img {
+      width: 100%;
+      max-height: 250px;
+      object-fit: cover;
+    }
+  }
+}
+
+.lightbox {
+  &-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+
+  &-content {
+    position: relative;
+    max-width: 90%;
+    max-height: 90%;
+    display: flex;
+    align-items: center;
+    gap: $spacing;
+  }
+
+  &-image {
+    max-width: 80vw;
+    max-height: 80vh;
+    object-fit: contain;
+  }
+
+  &-close,
+  &-prev,
+  &-next {
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: background 0.3s;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    padding: 0 50px;
+
+    &:hover {
+      background: rgba(255, 255, 255, 0.4);
+    }
+  }
+
+  &-close {
+    position: absolute;
+    top: -#{$spacing * 2};
+    right: 0;
+  }
+
+  &-prev,
+  &-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  &-prev {
+    left: -#{$spacing * 3};
+  }
+
+  &-next {
+    right: -#{$spacing * 3};
+  }
+}

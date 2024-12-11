@@ -12,6 +12,8 @@
         height: clamp(300px, 40vh, 1000px);
     }
     h1{
+        font-weight: 500;
+        font-family: '';
         text-align: center;
         color: var(--white-smoke);
         text-shadow: #000 0px 5px 10px, #000 0px 5px 10px;
